@@ -229,7 +229,31 @@ src="https://www.facebook.com/tr?id=2348742122604542&ev=PageView&noscript=1"
        Hidden until VSL ends.
        ========================= -->
   <main id="salesContent">
+    
+    <section class="section alt" id="comprar">
+      <div class="wrap">
+        <div class="offer">
+          <div class="kicker">Acceso inmediato</div>
+          <h2>Empieza a cuidar tu piel con una rutina clara</h2>
+          <p class="price-old">Valor de todo el contenido: MX$497</p>
+          <div class="price"><small>MX$</small>197</div>
+          <p style="color:var(--muted);margin-top:0">Pago único · Sin mensualidades</p>
 
+          <!-- Reemplaza # por tu enlace real de checkout -->
+          <a class="cta" href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">QUIERO EL MÉTODO PIEL SUAVE™</a>
+
+          <div class="guarantee">
+            <div class="seal">7<br>DÍAS</div>
+            <div style="text-align:left">
+              <strong>Garantía de 7 días</strong><br>
+              <span>Conoce el método y, si dentro del período de garantía sientes que no es para ti,
+              puedes solicitar tu reembolso.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section class="section alt">
       <div class="wrap">
         <div class="kicker">La idea que cambia la rutina</div>
@@ -412,8 +436,8 @@ src="https://www.facebook.com/tr?id=2348742122604542&ev=PageView&noscript=1"
     // Libera quando o Wistia informa que 97% foi assistido.
     video.addEventListener('percent-watched-change', (event) => {
       const percent = event.detail?.percent;
-      if (typeof percent === 'number' && percent >= 0.97) {
-        revealSalesContent('97-percent');
+      if (typeof percent === 'number' && percent >= 0.05) {
+        revealSalesContent('05-percent');
       }
     });
 
