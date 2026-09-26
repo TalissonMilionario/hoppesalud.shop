@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
-  <!-- Meta Pixel Code -->
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Método Piel Suave™ — una rutina organizada para cuidar tu piel antes, durante y después de la depilación.">
+
+<title>Método Piel Suave™</title>
+
+
+<!-- =========================
+     META PIXEL
+========================= -->
+
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,443 +25,1741 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init', '2348742122604542');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
+
+<noscript>
+<img
+height="1"
+width="1"
+style="display:none"
 src="https://www.facebook.com/tr?id=2348742122604542&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Método Piel Suave™ — una rutina organizada para cuidar tu piel antes, durante y después de la depilación.">
-  <title>Método Piel Suave™ | Tu rutina de cuidado corporal</title>
-  <style>
-    :root{
-      --bg:#fff8f7;
-      --paper:#ffffff;
-      --ink:#241c1d;
-      --muted:#6f6264;
-      --rose:#c95b72;
-      --rose-dark:#a63e58;
-      --rose-soft:#f8dce2;
-      --cream:#fff0e9;
-      --gold:#c89a4b;
-      --line:#eadbdd;
-      --shadow:0 18px 55px rgba(74,35,42,.12);
-      --radius:24px;
-      --max:1080px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      color:var(--ink);
-      background:
-        radial-gradient(circle at 8% 8%, rgba(248,220,226,.75), transparent 28%),
-        radial-gradient(circle at 92% 22%, rgba(255,240,233,.95), transparent 30%),
-        var(--bg);
-      line-height:1.55;
-    }
-    body:before{
-      content:"";
-      position:fixed; inset:0; pointer-events:none; opacity:.25;
-      background-image:radial-gradient(rgba(80,45,52,.09) .7px,transparent .7px);
-      background-size:14px 14px;
-      mask-image:linear-gradient(to bottom,black,transparent 75%);
-    }
-    .wrap{width:min(calc(100% - 32px),var(--max));margin:auto}
-    .eyebrow{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:8px 13px;border-radius:999px;
-      background:#fff;border:1px solid var(--line);
-      color:var(--rose-dark);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
-      box-shadow:0 8px 25px rgba(74,35,42,.06);
-    }
-    .hero{padding:30px 0 48px;text-align:center}
-    .hero h1{
-      max-width:900px;margin:20px auto 14px;
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(39px,6vw,72px);line-height:.98;letter-spacing:-.045em;
-    }
-    .hero h1 span{color:var(--rose)}
-    .hero .sub{
-      max-width:720px;margin:0 auto 26px;color:var(--muted);
-      font-size:clamp(17px,2.2vw,21px);
-    }
-    .vsl-shell{
-      position:relative;max-width:920px;margin:0 auto;
-      border-radius:var(--radius);overflow:hidden;background:#171214;
-      box-shadow:var(--shadow);border:7px solid rgba(255,255,255,.9);
-    }
-    .vsl-shell:after{
-      content:"";position:absolute;inset:0;pointer-events:none;
-      box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);
-    }
-    video{display:block;width:100%;aspect-ratio:16/9;background:#181315}
-    .vsl-note{margin:13px auto 0;color:#88797c;font-size:12px}
-    .locked-message{
-      margin:20px auto 0;max-width:650px;padding:13px 18px;border-radius:14px;
-      background:#fff;border:1px solid var(--line);color:var(--muted);font-size:14px;
-    }
+/>
+</noscript>
 
-    /* Everything below the VSL is intentionally hidden until the VSL finishes. */
-    #salesContent{display:none}
-    #salesContent.revealed{display:block;animation:reveal .75s ease both}
-    @keyframes reveal{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 
-    .section{padding:72px 0}
-    .section.alt{background:rgba(255,255,255,.7);border-top:1px solid rgba(234,219,221,.7);border-bottom:1px solid rgba(234,219,221,.7)}
-    .kicker{text-align:center;color:var(--rose-dark);font-weight:900;text-transform:uppercase;letter-spacing:.13em;font-size:12px}
-    .section h2{
-      text-align:center;font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(31px,4.4vw,50px);line-height:1.04;margin:10px auto 14px;letter-spacing:-.035em;
-    }
-    .lead{max-width:700px;margin:0 auto 34px;text-align:center;color:var(--muted);font-size:18px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{
-      background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:22px;padding:26px;
-      box-shadow:0 10px 35px rgba(74,35,42,.055)
-    }
-    .icon{
-      width:48px;height:48px;border-radius:15px;display:grid;place-items:center;
-      background:var(--rose-soft);color:var(--rose-dark);font-size:23px;margin-bottom:17px
-    }
-    .card h3{margin:0 0 8px;font-size:19px}
-    .card p{margin:0;color:var(--muted)}
-    .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:34px}
-    .step{padding:22px 14px;text-align:center;border-radius:20px;background:#fff;border:1px solid var(--line)}
-    .step b{display:block;color:var(--rose);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
-    .step strong{display:block;margin-top:6px;font-family:Georgia,serif;font-size:21px}
-    .ritual{
-      display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch;
-    }
-    .ritual-visual{
-      min-height:410px;border-radius:28px;overflow:hidden;position:relative;
-      background:
-        radial-gradient(circle at 70% 30%, rgba(255,218,180,.95), transparent 22%),
-        radial-gradient(circle at 36% 63%, rgba(104,57,36,.92), transparent 19%),
-        linear-gradient(135deg,#f9ded8,#d9a69b 55%,#8d5546);
-    }
-    .ritual-visual:before{
-      content:"CAFÉ";position:absolute;left:11%;bottom:10%;font-family:Georgia,serif;
-      font-size:clamp(70px,10vw,130px);font-weight:900;color:rgba(255,255,255,.35);letter-spacing:-.08em;
-    }
-    .ritual-visual:after{
-      content:"& MIEL";position:absolute;right:8%;top:12%;font-family:Georgia,serif;
-      font-size:clamp(25px,4vw,52px);font-weight:700;color:rgba(255,255,255,.82);
-    }
-    .ritual-copy{padding:12px 4px}
-    .ritual-copy h2{text-align:left;margin-top:0}
-    .checklist{list-style:none;padding:0;margin:24px 0}
-    .checklist li{display:flex;gap:12px;margin:13px 0;color:#514447}
-    .checklist li:before{content:"✓";flex:0 0 25px;height:25px;border-radius:50%;display:grid;place-items:center;background:var(--rose-soft);color:var(--rose-dark);font-weight:900}
-    .quote{
-      background:linear-gradient(135deg,#fff,#fff1f3);border:1px solid var(--line);border-radius:26px;
-      padding:30px;position:relative
-    }
-    .quote:before{content:"“";font-family:Georgia,serif;font-size:90px;color:var(--rose-soft);position:absolute;top:-12px;left:20px}
-    .quote p{font-family:Georgia,serif;font-size:20px;line-height:1.45;margin:18px 0 12px}
-    .quote small{color:var(--muted)}
-    .testimonials{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .offer{
-      max-width:760px;margin:auto;background:#fff;border:2px solid var(--rose-soft);border-radius:30px;
-      box-shadow:var(--shadow);padding:38px;text-align:center;position:relative;overflow:hidden
-    }
-    .offer:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:var(--cream);top:-110px;right:-80px}
-    .offer h2{position:relative}
-    .price-old{text-decoration:line-through;color:#998b8e;font-size:18px}
-    .price{font-family:Georgia,serif;font-size:64px;line-height:1;color:var(--rose-dark);font-weight:900;margin:7px 0}
-    .price small{font-family:Inter,sans-serif;font-size:20px}
-    .cta{
-      display:inline-flex;justify-content:center;align-items:center;width:min(100%,520px);
-      padding:18px 26px;border-radius:16px;text-decoration:none;
-      background:linear-gradient(135deg,var(--rose),var(--rose-dark));color:white;
-      font-weight:900;font-size:18px;box-shadow:0 12px 28px rgba(166,62,88,.25);
-      transition:.2s transform,.2s box-shadow
-    }
-    .cta:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(166,62,88,.3)}
-    .guarantee{display:flex;align-items:center;justify-content:center;gap:15px;margin:24px auto 0;max-width:570px;color:var(--muted)}
-    .seal{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--cream);border:1px solid #efd0c5;font-weight:900;color:var(--rose-dark)}
-    .faq{max-width:820px;margin:auto}
-    details{background:#fff;border:1px solid var(--line);border-radius:16px;margin:10px 0;padding:18px 20px}
-    summary{cursor:pointer;font-weight:800}
-    details p{color:var(--muted);margin:12px 0 2px}
-    .final{text-align:center;padding:80px 0 110px}
-    .final h2{max-width:760px;margin:10px auto 18px}
-    footer{padding:28px 0 42px;color:#9a8b8e;font-size:12px;text-align:center}
-    .micro{max-width:760px;margin:18px auto 0;color:#8c7e80;font-size:11px}
-    @media(max-width:820px){
-      .grid,.testimonials{grid-template-columns:1fr}
-      .steps{grid-template-columns:1fr 1fr}
-      .ritual{grid-template-columns:1fr}
-      .ritual-visual{min-height:270px}
-      .section{padding:55px 0}
-    }
-    @media(max-width:520px){
-      .wrap{width:min(calc(100% - 22px),var(--max))}
-      .hero{padding-top:20px}
-      .hero h1{font-size:39px}
-      .vsl-shell{border-width:4px;border-radius:18px}
-      .steps{grid-template-columns:1fr}
-      .offer{padding:27px 18px}
-      .price{font-size:54px}
-    }
-  </style>
+<style>
+
+/* =========================
+   BASE
+========================= */
+
+:root{
+  --bg:#fff8f7;
+  --white:#ffffff;
+  --ink:#241c1d;
+  --muted:#6f6264;
+  --rose:#c95b72;
+  --rose-dark:#a63e58;
+  --rose-light:#f8dce2;
+  --cream:#fff0e9;
+  --line:#eadbdd;
+  --shadow:0 18px 55px rgba(74,35,42,.12);
+  --max:1080px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  color:var(--ink);
+  font-family:
+  Inter,
+  ui-sans-serif,
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  sans-serif;
+
+  background:
+  radial-gradient(
+    circle at 8% 8%,
+    rgba(248,220,226,.75),
+    transparent 28%
+  ),
+  radial-gradient(
+    circle at 92% 22%,
+    rgba(255,240,233,.95),
+    transparent 30%
+  ),
+  var(--bg);
+
+  line-height:1.55;
+}
+
+.wrap{
+  width:min(
+    calc(100% - 32px),
+    var(--max)
+  );
+  margin:auto;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  padding:30px 0 55px;
+  text-align:center;
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:8px 14px;
+
+  border-radius:999px;
+
+  background:#fff;
+
+  border:1px solid var(--line);
+
+  color:var(--rose-dark);
+
+  font-size:12px;
+
+  font-weight:800;
+
+  letter-spacing:.08em;
+
+  text-transform:uppercase;
+
+  box-shadow:
+  0 8px 25px rgba(74,35,42,.06);
+}
+
+.hero h1{
+  max-width:900px;
+
+  margin:20px auto 14px;
+
+  font-family:
+  Georgia,
+  "Times New Roman",
+  serif;
+
+  font-size:
+  clamp(
+    38px,
+    6vw,
+    70px
+  );
+
+  line-height:.98;
+
+  letter-spacing:-.045em;
+}
+
+.hero h1 span{
+  color:var(--rose);
+}
+
+.hero-sub{
+  max-width:720px;
+
+  margin:0 auto 28px;
+
+  color:var(--muted);
+
+  font-size:
+  clamp(
+    17px,
+    2.2vw,
+    21px
+  );
+}
+
+
+/* =========================
+   VSL
+========================= */
+
+.vsl-shell{
+
+  position:relative;
+
+  max-width:920px;
+
+  margin:0 auto;
+
+  border-radius:24px;
+
+  overflow:hidden;
+
+  background:#171214;
+
+  box-shadow:var(--shadow);
+
+  border:6px solid rgba(255,255,255,.9);
+}
+
+wistia-player{
+  display:block;
+  width:100%;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section{
+  padding:75px 0;
+}
+
+.section.alt{
+  background:
+  rgba(255,255,255,.72);
+
+  border-top:
+  1px solid rgba(234,219,221,.7);
+
+  border-bottom:
+  1px solid rgba(234,219,221,.7);
+}
+
+.kicker{
+  text-align:center;
+
+  color:var(--rose-dark);
+
+  font-weight:900;
+
+  text-transform:uppercase;
+
+  letter-spacing:.13em;
+
+  font-size:12px;
+}
+
+.section h2{
+  text-align:center;
+
+  font-family:
+  Georgia,
+  "Times New Roman",
+  serif;
+
+  font-size:
+  clamp(
+    31px,
+    4.4vw,
+    50px
+  );
+
+  line-height:1.05;
+
+  margin:
+  10px auto 16px;
+
+  letter-spacing:-.035em;
+}
+
+.lead{
+  max-width:720px;
+
+  margin:
+  0 auto 35px;
+
+  text-align:center;
+
+  color:var(--muted);
+
+  font-size:18px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:18px;
+}
+
+.card{
+
+  background:
+  rgba(255,255,255,.95);
+
+  border:
+  1px solid var(--line);
+
+  border-radius:22px;
+
+  padding:27px;
+
+  box-shadow:
+  0 10px 35px
+  rgba(74,35,42,.055);
+}
+
+.icon{
+
+  width:48px;
+
+  height:48px;
+
+  border-radius:15px;
+
+  display:grid;
+
+  place-items:center;
+
+  background:
+  var(--rose-light);
+
+  color:
+  var(--rose-dark);
+
+  font-size:22px;
+
+  margin-bottom:17px;
+}
+
+.card h3{
+  margin:0 0 8px;
+  font-size:19px;
+}
+
+.card p{
+  margin:0;
+  color:var(--muted);
+}
+
+
+/* =========================
+   5 ETAPAS
+========================= */
+
+.steps{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(5,1fr);
+
+  gap:10px;
+
+  margin-top:34px;
+}
+
+.step{
+
+  padding:22px 14px;
+
+  text-align:center;
+
+  border-radius:20px;
+
+  background:#fff;
+
+  border:
+  1px solid var(--line);
+}
+
+.step b{
+
+  display:block;
+
+  color:var(--rose);
+
+  font-size:13px;
+
+  letter-spacing:.08em;
+
+  text-transform:uppercase;
+}
+
+.step strong{
+
+  display:block;
+
+  margin-top:6px;
+
+  font-family:Georgia,serif;
+
+  font-size:21px;
+}
+
+
+/* =========================
+   RITUAL
+========================= */
+
+.ritual{
+
+  display:grid;
+
+  grid-template-columns:
+  1fr 1fr;
+
+  gap:35px;
+
+  align-items:center;
+}
+
+.ritual-visual{
+
+  min-height:420px;
+
+  border-radius:28px;
+
+  overflow:hidden;
+
+  position:relative;
+
+  background:
+
+  radial-gradient(
+    circle at 70% 30%,
+    rgba(255,218,180,.95),
+    transparent 22%
+  ),
+
+  radial-gradient(
+    circle at 36% 63%,
+    rgba(104,57,36,.92),
+    transparent 19%
+  ),
+
+  linear-gradient(
+    135deg,
+    #f9ded8,
+    #d9a69b 55%,
+    #8d5546
+  );
+}
+
+.ritual-visual:before{
+
+  content:"CAFÉ";
+
+  position:absolute;
+
+  left:10%;
+
+  bottom:9%;
+
+  font-family:Georgia,serif;
+
+  font-size:
+  clamp(
+    70px,
+    10vw,
+    130px
+  );
+
+  font-weight:900;
+
+  color:
+  rgba(255,255,255,.35);
+
+  letter-spacing:-.08em;
+}
+
+.ritual-visual:after{
+
+  content:"& MIEL";
+
+  position:absolute;
+
+  right:8%;
+
+  top:12%;
+
+  font-family:Georgia,serif;
+
+  font-size:
+  clamp(
+    25px,
+    4vw,
+    52px
+  );
+
+  font-weight:700;
+
+  color:
+  rgba(255,255,255,.82);
+}
+
+.ritual-copy h2{
+  text-align:left;
+}
+
+.checklist{
+
+  list-style:none;
+
+  padding:0;
+
+  margin:25px 0;
+}
+
+.checklist li{
+
+  display:flex;
+
+  gap:12px;
+
+  margin:14px 0;
+
+  color:#514447;
+}
+
+.checklist li:before{
+
+  content:"✓";
+
+  flex:
+  0 0 25px;
+
+  height:25px;
+
+  border-radius:50%;
+
+  display:grid;
+
+  place-items:center;
+
+  background:
+  var(--rose-light);
+
+  color:
+  var(--rose-dark);
+
+  font-weight:900;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta-box{
+
+  max-width:780px;
+
+  margin:65px auto 0;
+
+  padding:40px 30px;
+
+  text-align:center;
+
+  background:
+  linear-gradient(
+    135deg,
+    #fff,
+    #fff0f3
+  );
+
+  border:
+  2px solid var(--rose-light);
+
+  border-radius:28px;
+
+  box-shadow:
+  var(--shadow);
+}
+
+.cta-box h3{
+
+  margin:0 0 10px;
+
+  font-family:
+  Georgia,
+  serif;
+
+  font-size:
+  clamp(
+    28px,
+    4vw,
+    40px
+  );
+}
+
+.cta-box p{
+
+  max-width:600px;
+
+  margin:
+  0 auto 25px;
+
+  color:var(--muted);
+
+  font-size:17px;
+}
+
+.cta{
+
+  display:inline-flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  width:min(
+    100%,
+    500px
+  );
+
+  padding:18px 26px;
+
+  border-radius:16px;
+
+  text-decoration:none;
+
+  background:
+  linear-gradient(
+    135deg,
+    var(--rose),
+    var(--rose-dark)
+  );
+
+  color:#fff;
+
+  font-weight:900;
+
+  font-size:18px;
+
+  box-shadow:
+  0 12px 28px
+  rgba(166,62,88,.25);
+
+  transition:.2s;
+}
+
+.cta:hover{
+
+  transform:
+  translateY(-2px);
+
+  box-shadow:
+  0 16px 34px
+  rgba(166,62,88,.3);
+}
+
+
+/* =========================
+   OFERTA
+========================= */
+
+.offer{
+
+  max-width:760px;
+
+  margin:auto;
+
+  background:#fff;
+
+  border:
+  2px solid var(--rose-light);
+
+  border-radius:30px;
+
+  box-shadow:var(--shadow);
+
+  padding:40px;
+
+  text-align:center;
+}
+
+.price-old{
+
+  text-decoration:line-through;
+
+  color:#998b8e;
+
+  font-size:18px;
+}
+
+.price{
+
+  font-family:Georgia,serif;
+
+  font-size:64px;
+
+  line-height:1;
+
+  color:var(--rose-dark);
+
+  font-weight:900;
+
+  margin:8px 0;
+}
+
+.price small{
+
+  font-family:Inter,sans-serif;
+
+  font-size:20px;
+}
+
+.guarantee{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:15px;
+
+  margin:
+  25px auto 0;
+
+  max-width:570px;
+
+  color:var(--muted);
+}
+
+.seal{
+
+  width:62px;
+
+  height:62px;
+
+  border-radius:50%;
+
+  display:grid;
+
+  place-items:center;
+
+  background:var(--cream);
+
+  border:
+  1px solid #efd0c5;
+
+  font-weight:900;
+
+  color:var(--rose-dark);
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq{
+
+  max-width:820px;
+
+  margin:auto;
+}
+
+details{
+
+  background:#fff;
+
+  border:
+  1px solid var(--line);
+
+  border-radius:16px;
+
+  margin:10px 0;
+
+  padding:18px 20px;
+}
+
+summary{
+
+  cursor:pointer;
+
+  font-weight:800;
+}
+
+details p{
+
+  color:var(--muted);
+
+  margin:
+  12px 0 2px;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final{
+
+  text-align:center;
+
+  padding:
+  80px 0
+  110px;
+}
+
+.final h2{
+
+  max-width:760px;
+
+  margin:
+  10px auto 18px;
+}
+
+.micro{
+
+  max-width:760px;
+
+  margin:
+  18px auto 0;
+
+  color:#8c7e80;
+
+  font-size:11px;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:820px){
+
+  .grid,
+  .ritual{
+    grid-template-columns:1fr;
+  }
+
+  .steps{
+    grid-template-columns:
+    1fr 1fr;
+  }
+
+  .ritual-visual{
+    min-height:300px;
+  }
+
+}
+
+@media(max-width:520px){
+
+  .wrap{
+    width:
+    min(
+      calc(100% - 22px),
+      var(--max)
+    );
+  }
+
+  .hero{
+    padding-top:20px;
+  }
+
+  .hero h1{
+    font-size:39px;
+  }
+
+  .vsl-shell{
+    border-width:4px;
+    border-radius:18px;
+  }
+
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  .offer{
+    padding:28px 18px;
+  }
+
+  .price{
+    font-size:54px;
+  }
+
+  .cta-box{
+    padding:
+    32px 18px;
+  }
+
+}
+
+</style>
+
 </head>
+
+
 <body>
 
-  <!-- =========================
-       ABOVE THE FOLD / VSL
-       ========================= -->
-  <header class="hero">
-    <div class="wrap">
-      <div class="eyebrow">✨ Método Piel Suave™</div>
 
-      <h1>
-        La rutina que puede ayudarte a cuidar tu piel
-        <span>antes, durante y después de la depilación.</span>
-      </h1>
+<!-- =========================
+     HERO + VSL
+========================= -->
 
-      <p class="sub">
-        
-      </p>
+<header class="hero">
 
-      <div class="vsl-shell">
-        <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/yi1sfi3p03.js" async type="module"></script><style>wistia-player[media-id='yi1sfi3p03']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/yi1sfi3p03/swatch'); display: block; filter: blur(5px); padding-top:174.44%; }</style> <wistia-player id="vsl" media-id="yi1sfi3p03" aspect="0.5732484076433121"></wistia-player>
-      </div>
+<div class="wrap">
 
-      <div class="locked-message" id="lockedMessage">
-        ▶ Mira la VSL completa. Al terminar, se desbloqueará el contenido de la página.
-      </div>
-    </div>
-  </header>
 
-  <!-- =========================
-       SALES CONTENT
-       Hidden until VSL ends.
-       ========================= -->
-  <main id="salesContent">
-    
-    <section class="section alt" id="comprar">
-      <div class="wrap">
-        <div class="offer">
-          <div class="kicker">Acceso inmediato</div>
-          <h2>Empieza a cuidar tu piel con una rutina clara</h2>
-          <p class="price-old">Valor de todo el contenido: MX$497</p>
-          <div class="price"><small>MX$</small>197</div>
-          <p style="color:var(--muted);margin-top:0">Pago único · Sin mensualidades</p>
+<div class="eyebrow">
+✨ Método Piel Suave™
+</div>
 
-          <!-- Reemplaza # por tu enlace real de checkout -->
-          <a class="cta" href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">QUIERO EL MÉTODO PIEL SUAVE™</a>
 
-          <div class="guarantee">
-            <div class="seal">7<br>DÍAS</div>
-            <div style="text-align:left">
-              <strong>Garantía de 7 días</strong><br>
-              <span>Conoce el método y, si dentro del período de garantía sientes que no es para ti,
-              puedes solicitar tu reembolso.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="section alt">
-      <div class="wrap">
-        <div class="kicker">La idea que cambia la rutina</div>
-        <h2>No necesitas necesariamente más productos.<br>Necesitas una mejor secuencia.</h2>
-        <p class="lead">
-          La depilación, la exfoliación y la hidratación no son exactamente el mismo momento.
-          Método Piel Suave™ organiza cada etapa para que dejes de improvisar.
-        </p>
+<h1>
 
-        <div class="grid">
-          <article class="card">
-            <div class="icon">①</div>
-            <h3>Preparar</h3>
-            <p>Aprende qué cuidados tener en cuenta antes de depilarte y cómo evitar hábitos innecesariamente agresivos.</p>
-          </article>
-          <article class="card">
-            <div class="icon">②</div>
-            <h3>Depilar</h3>
-            <p>Entiende cómo adaptar tu rutina al método de depilación que utilizas.</p>
-          </article>
-          <article class="card">
-            <div class="icon">③</div>
-            <h3>Recuperar</h3>
-            <p>Descubre qué hacer cuando la piel está más sensible y cuándo simplemente conviene dejarla tranquila.</p>
-          </article>
-        </div>
+La rutina que puede ayudarte a cuidar tu piel
 
-        <div class="steps">
-          <div class="step"><b>Etapa 1</b><strong>Preparar</strong></div>
-          <div class="step"><b>Etapa 2</b><strong>Depilar</strong></div>
-          <div class="step"><b>Etapa 3</b><strong>Recuperar</strong></div>
-          <div class="step"><b>Etapa 4</b><strong>Renovar</strong></div>
-          <div class="step"><b>Etapa 5</b><strong>Hidratar</strong></div>
-        </div>
-      </div>
-    </section>
+<span>
+antes, durante y después de la depilación.
+</span>
 
-    <section class="section">
-      <div class="wrap ritual">
-        <div class="ritual-visual" aria-label="Concepto visual del Ritual Café & Miel"></div>
-        <div class="ritual-copy">
-          <div class="kicker" style="text-align:left">Dentro del método</div>
-          <h2>Conoce el Ritual Café & Miel™</h2>
-          <p class="lead" style="text-align:left">
-            El café usado que normalmente termina en la basura se convierte en parte de un ritual
-            de exfoliación corporal cuidadosamente organizado.
-          </p>
-          <ul class="checklist">
-            <li>Aprende cómo preparar el ritual paso a paso.</li>
-            <li>Descubre cuándo incorporarlo dentro de tu rutina.</li>
-            <li>Aprende en qué zonas y con qué frecuencia utilizarlo.</li>
-            <li>Conoce cuándo NO utilizarlo y cuándo dejar descansar la piel.</li>
-          </ul>
-          <p style="color:var(--muted)">
-            No se trata de frotar café con fuerza. Se trata de entender cómo, cuándo y por qué
-            incorporar una exfoliación suave dentro de una rutina de cuidado corporal.
-          </p>
-        </div>
-      </div>
-    </section>
+</h1>
 
-    <section class="section alt">
-      <div class="wrap">
-        <div class="kicker">Todo organizado para ti</div>
-        <h2>Deja de preguntarte<br>“¿qué hago hoy?”</h2>
-        <p class="lead">
-          Recibes un sistema sencillo para saber qué hacer antes, después y entre tus sesiones de depilación.
-        </p>
-        <div class="grid">
-          <article class="card"><div class="icon">📖</div><h3>Módulo 1</h3><p><b>Descubre los errores que estás cometiendo al depilarte.</b><br>Identifica hábitos que pueden estar complicando tu rutina.</p></article>
-          <article class="card"><div class="icon">✨</div><h3>Módulo 2</h3><p><b>Los 3 secretos de una buena preparación.</b><br>Aprende a preparar tu piel con una rutina más ordenada.</p></article>
-          <article class="card"><div class="icon">☕</div><h3>Módulo 3</h3><p><b>El Ritual Café & Miel™ Premium.</b><br>Preparación, aplicación, frecuencia y cuidados.</p></article>
-          <article class="card"><div class="icon">🌸</div><h3>Módulo 4</h3><p><b>El secreto después de depilarte.</b><br>Qué hacer y qué evitar cuando tu piel está sensible.</p></article>
-          <article class="card"><div class="icon">🗓️</div><h3>Módulo 5</h3><p><b>Calendario Piel Suave™ de 21 días.</b><br>Un paso a paso para dejar de improvisar.</p></article>
-          <article class="card"><div class="icon">💗</div><h3>Bonos</h3><p><b>3 guías adicionales.</b><br>Errores, guía de emergencia e ingredientes para tu rutina.</p></article>
-        </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="kicker">Lo que queremos que sientas</div>
-        <h2>Una rutina clara.<br>Una piel que puedas cuidar con más intención.</h2>
-        <p class="lead">
-          El objetivo no es prometer una piel “perfecta” de la noche a la mañana.
-          Es ayudarte a entender tu rutina y dejar de cambiar de producto cada vez que aparece un problema.
-        </p>
-        <div class="testimonials">
-          <!-- IMPORTANTE: sustituye estos textos por testimonios reales y autorizados. -->
-          <article class="quote">
-            <p>“Después de seguir el método, lo que más me gustó fue dejar de improvisar. Ahora sé qué hacer antes y después de depilarme y mi piel se siente mucho más cuidada.”</p>
-            <small>— Testimonio de cliente real · publicar únicamente con autorización</small>
-          </article>
-          <article class="quote">
-            <p>“Yo siempre pensaba que necesitaba otro producto. El método me hizo entender que también importaba cuándo y cómo cuidaba mi piel. Mi rutina ahora es mucho más sencilla.”</p>
-            <small>— Testimonio de cliente real · publicar únicamente con autorización</small>
-          </article>
-        </div>
-      </div>
-    </section>
+<p class="hero-sub">
 
-    <section class="section alt" id="comprar">
-      <div class="wrap">
-        <div class="offer">
-          <div class="kicker">Acceso inmediato</div>
-          <h2>Empieza a cuidar tu piel con una rutina clara</h2>
-          <p class="price-old">Valor de todo el contenido: MX$497</p>
-          <div class="price"><small>MX$</small>197</div>
-          <p style="color:var(--muted);margin-top:0">Pago único · Sin mensualidades</p>
+Descubre por qué una mejor secuencia puede
+cambiar la forma en que cuidas tu piel.
 
-          <!-- Reemplaza # por tu enlace real de checkout -->
-          <a class="cta" href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">QUIERO EL MÉTODO PIEL SUAVE™</a>
+</p>
 
-          <div class="guarantee">
-            <div class="seal">7<br>DÍAS</div>
-            <div style="text-align:left">
-              <strong>Garantía de 7 días</strong><br>
-              <span>Conoce el método y, si dentro del período de garantía sientes que no es para ti,
-              puedes solicitar tu reembolso.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="kicker">Preguntas frecuentes</div>
-        <h2>Antes de empezar</h2>
-        <div class="faq">
-          <details><summary>¿Necesito dejar de depilarme?</summary><p>No. El método está diseñado para ayudarte a organizar los cuidados alrededor de tu rutina de depilación.</p></details>
-          <details><summary>¿El Ritual Café & Miel™ es obligatorio?</summary><p>Es una parte importante del método, pero la rutina también enseña cuándo renovar, cuándo hidratar y cuándo dejar descansar la piel.</p></details>
-          <details><summary>¿Puedo usarlo inmediatamente después de depilarme?</summary><p>No. El método enseña a respetar los momentos de mayor sensibilidad y cuándo evitar la exfoliación. No se recomienda frotar una piel recién depilada.</p></details>
-          <details><summary>¿Funciona igual para todas las mujeres?</summary><p>No necesariamente. La piel y la forma de depilarse varían. El método es educativo y no sustituye la evaluación de un dermatólogo.</p></details>
-          <details><summary>¿Qué recibo después de comprar?</summary><p>Acceso al Método Piel Suave™, sus módulos, el Ritual Café & Miel™, el Calendario de 21 días y los bonos incluidos en la oferta.</p></details>
-        </div>
-      </div>
-    </section>
+<!-- =========================
+     WISTIA
+========================= -->
 
-    <section class="final">
-      <div class="wrap">
-        <div class="eyebrow">Tu piel. Tu rutina. Tu momento. 💗</div>
-        <h2>Deja de improvisar y empieza a cuidar tu piel con intención.</h2>
-        <p class="lead">Accede ahora al Método Piel Suave™ por MX$197.</p>
-        <a class="cta" href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">QUIERO EMPEZAR AHORA</a>
-        <p class="micro">
-          Información educativa de cuidado corporal. Los resultados y la experiencia pueden variar.
-          Si presentas irritación persistente, dolor, infección u otros síntomas preocupantes, busca orientación profesional.
-        </p>
-      </div>
-    </section>
+<div class="vsl-shell">
 
-  </main>
-
-  <footer>
-    © 2026 Método Piel Suave™ · Todos los derechos reservados.
-  </footer>
-
-<script>
-  /*
-    REVELACIÓN DA PÁGINA:
-    O vídeo é um player Wistia (<wistia-player>), não um elemento <video>.
-    Por isso usamos os eventos oficiais do Wistia.
-    A página libera em 97% ou quando o vídeo termina.
-  */
-  const video = document.getElementById('vsl');
-  const content = document.getElementById('salesContent');
-  const locked = document.getElementById('lockedMessage');
-  let revealed = false;
-
-  function revealSalesContent(reason) {
-    if (revealed) return;
-    revealed = true;
-    content.classList.add('revealed');
-    locked.style.display = 'none';
-    console.log('Página liberada:', reason);
-  }
-
-  if (video) {
-    // Libera quando o Wistia informa que 97% foi assistido.
-    video.addEventListener('percent-watched-change', (event) => {
-      const percent = event.detail?.percent;
-      if (typeof percent === 'number' && percent >= 0.05) {
-        revealSalesContent('05-percent');
-      }
-    });
-
-    // Segurança: se o vídeo chegar ao final, libera mesmo que o evento de 97% não dispare.
-    video.addEventListener('ended', () => {
-      revealSalesContent('ended');
-    });
-  } else {
-    console.error('Player Wistia #vsl não encontrado.');
-  }
+<script
+src="https://fast.wistia.com/player.js"
+async>
 </script>
+
+<script
+src="https://fast.wistia.com/embed/yi1sfi3p03.js"
+async
+type="module">
+</script>
+
+<style>
+
+wistia-player[
+media-id='yi1sfi3p03'
+]:not(:defined){
+
+background:
+center /
+contain
+no-repeat
+url(
+'https://fast.wistia.com/embed/medias/yi1sfi3p03/swatch'
+);
+
+display:block;
+
+filter:blur(5px);
+
+padding-top:174.44%;
+}
+
+</style>
+
+
+<wistia-player
+media-id="yi1sfi3p03"
+aspect="0.5732484076433121">
+</wistia-player>
+
+
+</div>
+
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     IDEIA CENTRAL
+========================= -->
+
+<section class="section alt">
+
+<div class="wrap">
+
+
+<div class="kicker">
+La idea que cambia la rutina
+</div>
+
+
+<h2>
+
+No necesitas necesariamente
+más productos.<br>
+
+Necesitas una mejor secuencia.
+
+</h2>
+
+
+<p class="lead">
+
+La depilación, la exfoliación y la hidratación
+no son exactamente el mismo momento.
+
+Método Piel Suave™ organiza cada etapa
+para que dejes de improvisar.
+
+</p>
+
+
+<div class="grid">
+
+
+<article class="card">
+
+<div class="icon">①</div>
+
+<h3>
+Preparar
+</h3>
+
+<p>
+
+Aprende qué cuidados tener en cuenta
+antes de depilarte y cómo evitar hábitos
+innecesariamente agresivos.
+
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">②</div>
+
+<h3>
+Depilar
+</h3>
+
+<p>
+
+Entiende cómo adaptar tu rutina
+al método de depilación que utilizas.
+
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">③</div>
+
+<h3>
+Recuperar
+</h3>
+
+<p>
+
+Descubre qué hacer cuando la piel
+está más sensible y cuándo conviene
+simplemente dejarla tranquila.
+
+</p>
+
+</article>
+
+
+</div>
+
+
+<div class="steps">
+
+<div class="step">
+<b>Etapa 1</b>
+<strong>Preparar</strong>
+</div>
+
+<div class="step">
+<b>Etapa 2</b>
+<strong>Depilar</strong>
+</div>
+
+<div class="step">
+<b>Etapa 3</b>
+<strong>Recuperar</strong>
+</div>
+
+<div class="step">
+<b>Etapa 4</b>
+<strong>Renovar</strong>
+</div>
+
+<div class="step">
+<b>Etapa 5</b>
+<strong>Hidratar</strong>
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     RITUAL CAFÉ & MIEL
+========================= -->
+
+<section class="section">
+
+<div class="wrap ritual">
+
+
+<div class="ritual-visual">
+</div>
+
+
+<div class="ritual-copy">
+
+<div
+class="kicker"
+style="text-align:left">
+
+Dentro del método
+
+</div>
+
+
+<h2>
+Conoce el Ritual Café & Miel™
+</h2>
+
+
+<p
+class="lead"
+style="text-align:left">
+
+El café usado que normalmente termina
+en la basura se convierte en parte de
+un ritual de exfoliación corporal
+cuidadosamente organizado.
+
+</p>
+
+
+<ul class="checklist">
+
+<li>
+Aprende cómo preparar el ritual paso a paso.
+</li>
+
+<li>
+Descubre cuándo incorporarlo dentro de tu rutina.
+</li>
+
+<li>
+Aprende en qué zonas y con qué frecuencia utilizarlo.
+</li>
+
+<li>
+Conoce cuándo NO utilizarlo y cuándo dejar descansar la piel.
+</li>
+
+</ul>
+
+
+<p style="color:var(--muted)">
+
+No se trata de frotar café con fuerza.
+
+Se trata de entender cómo, cuándo y por qué
+incorporar una exfoliación suave dentro de una
+rutina de cuidado corporal.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+<!-- =========================
+     CTA NO MEIO DA PÁGINA
+========================= -->
+
+<div class="wrap">
+
+
+<div class="cta-box">
+
+
+<h3>
+¿Quieres aprender la rutina completa?
+</h3>
+
+
+<p>
+
+Descubre cómo organizar los cuidados
+antes, durante y después de la depilación
+con el Método Piel Suave™.
+
+</p>
+
+
+<a
+class="cta"
+href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">
+
+QUIERO CONOCER EL MÉTODO
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<!-- =========================
+     MÓDULOS
+========================= -->
+
+<section class="section alt">
+
+<div class="wrap">
+
+
+<div class="kicker">
+Todo organizado para ti
+</div>
+
+
+<h2>
+Deja de preguntarte<br>
+“¿qué hago hoy?”
+</h2>
+
+
+<p class="lead">
+
+Recibes un sistema sencillo para saber
+qué hacer antes, después y entre tus
+sesiones de depilación.
+
+</p>
+
+
+<div class="grid">
+
+
+<article class="card">
+
+<div class="icon">📖</div>
+
+<h3>
+Módulo 1
+</h3>
+
+<p>
+
+<b>
+Descubre los errores que estás
+cometiendo al depilarte.
+</b>
+
+<br><br>
+
+Identifica hábitos que pueden estar
+complicando tu rutina.
+
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">✨</div>
+
+<h3>
+Módulo 2
+</h3>
+
+<p>
+
+<b>
+Los 3 secretos de una buena preparación.
+</b>
+
+<br><br>
+
+Aprende a preparar tu piel
+con una rutina más ordenada.
+
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">☕</div>
+
+<h3>
+Módulo 3
+</h3>
+
+<p>
+
+<b>
+El Ritual Café & Miel™ Premium.
+</b>
+
+<br><br>
+
+Preparación, aplicación,
+frecuencia y cuidados.
+
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">🌸</div>
+
+<h3>
+Módulo 4
+</h3>
+
+<p>
+
+<b>
+El secreto después de depilarte.
+</b>
+
+<br><br>
+
+Qué hacer y qué evitar cuando
+tu piel está sensible.
+
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">🗓️</div>
+
+<h3>
+Módulo 5
+</h3>
+
+<p>
+
+<b>
+Calendario Piel Suave™ de 21 días.
+</b>
+
+<br><br>
+
+Un paso a paso para dejar
+de improvisar.
+
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon">💗</div>
+
+<h3>
+Bonos
+</h3>
+
+<p>
+
+<b>
+3 guías adicionales.
+</b>
+
+<br><br>
+
+Errores, guía de emergencia
+e ingredientes para tu rutina.
+
+</p>
+
+</article>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     RESULTADO ESPERADO
+========================= -->
+
+<section class="section">
+
+<div class="wrap">
+
+
+<div class="kicker">
+Una nueva forma de organizar tu rutina
+</div>
+
+
+<h2>
+
+Una rutina clara.<br>
+
+Una piel que puedas cuidar
+con más intención.
+
+</h2>
+
+
+<p class="lead">
+
+El objetivo no es prometer una piel
+“perfecta” de la noche a la mañana.
+
+Es ayudarte a entender tu rutina
+y dejar de cambiar de producto cada vez
+que aparece un problema.
+
+</p>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     OFERTA
+========================= -->
+
+<section
+class="section alt"
+id="comprar">
+
+<div class="wrap">
+
+
+<div class="offer">
+
+
+<div class="kicker">
+Acceso inmediato
+</div>
+
+
+<h2>
+
+Empieza a cuidar tu piel
+con una rutina clara
+
+</h2>
+
+
+<p class="price-old">
+
+Valor de todo el contenido:
+MX$497
+
+</p>
+
+
+<div class="price">
+
+<small>MX$</small>197
+
+</div>
+
+
+<p
+style="color:var(--muted);margin-top:0">
+
+Pago único · Sin mensualidades
+
+</p>
+
+
+<a
+class="cta"
+href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">
+
+QUIERO EL MÉTODO PIEL SUAVE™
+
+</a>
+
+
+<div class="guarantee">
+
+
+<div class="seal">
+
+7<br>DÍAS
+
+</div>
+
+
+<div style="text-align:left">
+
+<strong>
+Garantía de 7 días
+</strong>
+
+<br>
+
+<span>
+
+Conoce el método y, si dentro del período
+de garantía sientes que no es para ti,
+puedes solicitar tu reembolso.
+
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="section">
+
+<div class="wrap">
+
+
+<div class="kicker">
+Preguntas frecuentes
+</div>
+
+
+<h2>
+Antes de empezar
+</h2>
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>
+¿Necesito dejar de depilarme?
+</summary>
+
+<p>
+
+No.
+
+El método está diseñado para ayudarte
+a organizar los cuidados alrededor
+de tu rutina de depilación.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+¿El Ritual Café & Miel™ es obligatorio?
+</summary>
+
+<p>
+
+Es una parte importante del método,
+pero la rutina también enseña cuándo
+renovar, cuándo hidratar y cuándo
+dejar descansar la piel.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+¿Puedo usarlo inmediatamente después
+de depilarme?
+</summary>
+
+<p>
+
+No.
+
+El método enseña a respetar los momentos
+de mayor sensibilidad y cuándo evitar
+la exfoliación.
+
+No se recomienda frotar una piel
+recién depilada.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+¿Funciona igual para todas las mujeres?
+</summary>
+
+<p>
+
+No necesariamente.
+
+La piel y la forma de depilarse varían.
+
+El método es educativo y no sustituye
+la evaluación de un dermatólogo.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+¿Qué recibo después de comprar?
+</summary>
+
+<p>
+
+Acceso al Método Piel Suave™,
+sus módulos, el Ritual Café & Miel™,
+el Calendario de 21 días y los bonos
+incluidos en la oferta.
+
+</p>
+
+</details>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA FINAL
+========================= -->
+
+<section class="final">
+
+<div class="wrap">
+
+
+<div class="eyebrow">
+Tu piel. Tu rutina. Tu momento. 💗
+</div>
+
+
+<h2>
+
+Deja de improvisar y empieza
+a cuidar tu piel con intención.
+
+</h2>
+
+
+<p class="lead">
+
+Accede ahora al Método Piel Suave™
+por MX$197.
+
+</p>
+
+
+<a
+class="cta"
+href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">
+
+QUIERO EMPEZAR AHORA
+
+</a>
+
+
+<p class="micro">
+
+Información educativa de cuidado corporal.
+Los resultados y la experiencia pueden variar.
+
+Si presentas irritación persistente,
+dolor, infección u otros síntomas
+preocupantes, busca orientación profesional.
+
+</p>
+
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 Método Piel Suave™ ·
+Todos los derechos reservados.
+
+</footer>
+
+
 </body>
+
 </html>
