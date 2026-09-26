@@ -215,7 +215,7 @@ src="https://www.facebook.com/tr?id=2348742122604542&ev=PageView&noscript=1"
       </p>
 
       <div class="vsl-shell">
-        <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/yi1sfi3p03.js" async type="module"></script><style>wistia-player[media-id='yi1sfi3p03']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/yi1sfi3p03/swatch'); display: block; filter: blur(5px); padding-top:174.44%; }</style> <wistia-player media-id="yi1sfi3p03" aspect="0.5732484076433121"></wistia-player>
+        <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/yi1sfi3p03.js" async type="module"></script><style>wistia-player[media-id='yi1sfi3p03']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/yi1sfi3p03/swatch'); display: block; filter: blur(5px); padding-top:174.44%; }</style> <wistia-player id="vsl" media-id="yi1sfi3p03" aspect="0.5732484076433121"></wistia-player>
       </div>
 
       <div class="locked-message" id="lockedMessage">
@@ -341,7 +341,7 @@ src="https://www.facebook.com/tr?id=2348742122604542&ev=PageView&noscript=1"
           <p style="color:var(--muted);margin-top:0">Pago único · Sin mensualidades</p>
 
           <!-- Reemplaza # por tu enlace real de checkout -->
-          <a class="cta" href="#" id="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">QUIERO EL MÉTODO PIEL SUAVE™</a>
+          <a class="cta" href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">QUIERO EL MÉTODO PIEL SUAVE™</a>
 
           <div class="guarantee">
             <div class="seal">7<br>DÍAS</div>
@@ -390,43 +390,40 @@ src="https://www.facebook.com/tr?id=2348742122604542&ev=PageView&noscript=1"
 
 <script>
   /*
-    REVELACIÓN INTENCIONAL:
-    - La página inferior NO aparece al abrir.
-    - Se revela cuando la VSL termina.
-    - Fallback: 12 minutos después de la primera interacción con el video.
-    Esto es preferible a un delay fijo porque respeta la duración real de la VSL.
+    REVELACIÓN DA PÁGINA:
+    O vídeo é um player Wistia (<wistia-player>), não um elemento <video>.
+    Por isso usamos os eventos oficiais do Wistia.
+    A página libera em 97% ou quando o vídeo termina.
   */
   const video = document.getElementById('vsl');
   const content = document.getElementById('salesContent');
   const locked = document.getElementById('lockedMessage');
-  let fallbackTimer = null;
   let revealed = false;
 
-  function revealSalesContent(reason){
-    if(revealed) return;
+  function revealSalesContent(reason) {
+    if (revealed) return;
     revealed = true;
-    clearTimeout(fallbackTimer);
     content.classList.add('revealed');
     locked.style.display = 'none';
+    console.log('Página liberada:', reason);
   }
 
-  video.addEventListener('play', () => {
-    if(!fallbackTimer){
-      fallbackTimer = setTimeout(() => revealSalesContent('fallback'), 12 * 60 * 1000);
-    }
-  });
+  if (video) {
+    // Libera quando o Wistia informa que 97% foi assistido.
+    video.addEventListener('percent-watched-change', (event) => {
+      const percent = event.detail?.percent;
+      if (typeof percent === 'number' && percent >= 0.97) {
+        revealSalesContent('97-percent');
+      }
+    });
 
-  video.addEventListener('ended', () => revealSalesContent('ended'));
-
-  /*
-    Fallback adicional para vídeos que terminen alguns segundos antes por
-    metadados imperfeitos: 97% da duração também libera.
-  */
-  video.addEventListener('timeupdate', () => {
-    if(video.duration && video.currentTime / video.duration >= 0.97){
-      revealSalesContent('97-percent');
-    }
-  });
+    // Segurança: se o vídeo chegar ao final, libera mesmo que o evento de 97% não dispare.
+    video.addEventListener('ended', () => {
+      revealSalesContent('ended');
+    });
+  } else {
+    console.error('Player Wistia #vsl não encontrado.');
+  }
 </script>
 </body>
 </html>
