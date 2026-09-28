@@ -3,898 +3,750 @@
 
 <head>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="Método Piel Suave™ — una rutina organizada para cuidar tu piel antes, durante y después de la depilación.">
-
-<title>Método Piel Suave™</title>
-
-
-<!-- =========================
-     META PIXEL
-========================= -->
-
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '2348742122604542');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-<img
-height="1"
-width="1"
-style="display:none"
-src="https://www.facebook.com/tr?id=2348742122604542&ev=PageView&noscript=1"
-/>
-</noscript>
-
-
-<style>
-
-/* =========================
-   BASE
-========================= */
-
-:root{
-  --bg:#fff8f7;
-  --white:#ffffff;
-  --ink:#241c1d;
-  --muted:#6f6264;
-  --rose:#c95b72;
-  --rose-dark:#a63e58;
-  --rose-light:#f8dce2;
-  --cream:#fff0e9;
-  --line:#eadbdd;
-  --shadow:0 18px 55px rgba(74,35,42,.12);
-  --max:1080px;
-}
-
-*{
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  margin:0;
-  color:var(--ink);
-  font-family:
-  Inter,
-  ui-sans-serif,
-  system-ui,
-  -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  sans-serif;
-
-  background:
-  radial-gradient(
-    circle at 8% 8%,
-    rgba(248,220,226,.75),
-    transparent 28%
-  ),
-  radial-gradient(
-    circle at 92% 22%,
-    rgba(255,240,233,.95),
-    transparent 30%
-  ),
-  var(--bg);
+  <!-- =====================================================
+       META PIXEL
+       ===================================================== -->
 
-  line-height:1.55;
-}
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq)return;
+      n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+      };
 
-.wrap{
-  width:min(
-    calc(100% - 32px),
-    var(--max)
-  );
-  margin:auto;
-}
+      if(!f._fbq)f._fbq=n;
 
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
 
-/* =========================
-   HERO
-========================= */
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
 
-.hero{
-  padding:30px 0 55px;
-  text-align:center;
-}
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }
+    (window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
 
-.eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
+    fbq('init', '2348742122604542');
+    fbq('track', 'PageView');
+  </script>
 
-  padding:8px 14px;
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=2348742122604542&ev=PageView&noscript=1"
+    />
+  </noscript>
 
-  border-radius:999px;
 
-  background:#fff;
+  <!-- =====================================================
+       CONFIGURAÇÕES
+       ===================================================== -->
 
-  border:1px solid var(--line);
+  <meta charset="UTF-8">
 
-  color:var(--rose-dark);
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  font-size:12px;
+  <meta
+    name="description"
+    content="Método Piel Suave™"
+  >
 
-  font-weight:800;
+  <title>
+    Método Piel Suave™
+  </title>
 
-  letter-spacing:.08em;
 
-  text-transform:uppercase;
+  <!-- =====================================================
+       CSS
+       ===================================================== -->
 
-  box-shadow:
-  0 8px 25px rgba(74,35,42,.06);
-}
+  <style>
 
-.hero h1{
-  max-width:900px;
+    :root{
 
-  margin:20px auto 14px;
+      --bg:#fff8f7;
 
-  font-family:
-  Georgia,
-  "Times New Roman",
-  serif;
+      --white:#ffffff;
 
-  font-size:
-  clamp(
-    38px,
-    6vw,
-    70px
-  );
+      --text:#241c1d;
 
-  line-height:.98;
+      --muted:#76676a;
 
-  letter-spacing:-.045em;
-}
+      --rose:#c95b72;
 
-.hero h1 span{
-  color:var(--rose);
-}
+      --rose-dark:#a63e58;
 
-.hero-sub{
-  max-width:720px;
+      --green:#18a957;
 
-  margin:0 auto 28px;
+      --green-dark:#0b853e;
 
-  color:var(--muted);
+      --line:#eadbdd;
 
-  font-size:
-  clamp(
-    17px,
-    2.2vw,
-    21px
-  );
-}
+      --soft:#fff0f3;
 
+      --urgency-bg:#fff1e9;
 
-/* =========================
-   VSL
-========================= */
+      --urgency-text:#9b4d35;
 
-.vsl-shell{
+      --shadow:
+        0 20px 60px rgba(70,30,40,.14);
 
-  position:relative;
+    }
 
-  max-width:920px;
 
-  margin:0 auto;
+    *{
+      box-sizing:border-box;
+    }
 
-  border-radius:24px;
 
-  overflow:hidden;
+    html{
+      scroll-behavior:smooth;
+    }
 
-  background:#171214;
 
-  box-shadow:var(--shadow);
+    body{
 
-  border:6px solid rgba(255,255,255,.9);
-}
+      margin:0;
 
-wistia-player{
-  display:block;
-  width:100%;
-}
+      background:
+        radial-gradient(
+          circle at top,
+          #fff0f3 0%,
+          #fff8f7 42%,
+          #ffffff 100%
+        );
 
+      color:var(--text);
 
-/* =========================
-   SEÇÕES
-========================= */
+      font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
 
-.section{
-  padding:75px 0;
-}
+      line-height:1.5;
 
-.section.alt{
-  background:
-  rgba(255,255,255,.72);
+    }
 
-  border-top:
-  1px solid rgba(234,219,221,.7);
 
-  border-bottom:
-  1px solid rgba(234,219,221,.7);
-}
+    /* =====================================================
+       VSL
+       ===================================================== */
 
-.kicker{
-  text-align:center;
+    .hero{
 
-  color:var(--rose-dark);
+      text-align:center;
 
-  font-weight:900;
+      padding:
+        22px
+        12px
+        45px;
 
-  text-transform:uppercase;
+    }
 
-  letter-spacing:.13em;
 
-  font-size:12px;
-}
+    .container{
 
-.section h2{
-  text-align:center;
+      width:min(
+        940px,
+        calc(100% - 20px)
+      );
 
-  font-family:
-  Georgia,
-  "Times New Roman",
-  serif;
+      margin:auto;
 
-  font-size:
-  clamp(
-    31px,
-    4.4vw,
-    50px
-  );
+    }
 
-  line-height:1.05;
 
-  margin:
-  10px auto 16px;
+    .badge{
 
-  letter-spacing:-.035em;
-}
+      display:inline-block;
 
-.lead{
-  max-width:720px;
+      padding:
+        8px
+        14px;
 
-  margin:
-  0 auto 35px;
+      border-radius:999px;
 
-  text-align:center;
+      background:var(--white);
 
-  color:var(--muted);
+      border:1px solid var(--line);
 
-  font-size:18px;
-}
+      color:var(--rose-dark);
 
+      font-size:12px;
 
-/* =========================
-   CARDS
-========================= */
+      font-weight:900;
 
-.grid{
+      letter-spacing:.08em;
 
-  display:grid;
+      text-transform:uppercase;
 
-  grid-template-columns:
-  repeat(3,1fr);
+      box-shadow:
+        0 8px 25px rgba(70,30,40,.05);
 
-  gap:18px;
-}
+    }
 
-.card{
 
-  background:
-  rgba(255,255,255,.95);
+    .hero h1{
 
-  border:
-  1px solid var(--line);
+      max-width:850px;
 
-  border-radius:22px;
+      margin:
+        18px
+        auto
+        24px;
 
-  padding:27px;
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-  box-shadow:
-  0 10px 35px
-  rgba(74,35,42,.055);
-}
+      font-size:
+        clamp(
+          34px,
+          5.5vw,
+          62px
+        );
 
-.icon{
+      line-height:1;
 
-  width:48px;
+      letter-spacing:-.045em;
 
-  height:48px;
+    }
 
-  border-radius:15px;
 
-  display:grid;
+    .hero h1 span{
 
-  place-items:center;
+      color:var(--rose);
 
-  background:
-  var(--rose-light);
+    }
 
-  color:
-  var(--rose-dark);
 
-  font-size:22px;
+    /* =====================================================
+       WISTIA
+       ===================================================== */
 
-  margin-bottom:17px;
-}
+    .vsl{
 
-.card h3{
-  margin:0 0 8px;
-  font-size:19px;
-}
+      max-width:900px;
 
-.card p{
-  margin:0;
-  color:var(--muted);
-}
+      margin:auto;
 
+      border-radius:22px;
 
-/* =========================
-   5 ETAPAS
-========================= */
+      overflow:hidden;
 
-.steps{
+      background:#111;
 
-  display:grid;
+      border:
+        5px solid
+        rgba(255,255,255,.95);
 
-  grid-template-columns:
-  repeat(5,1fr);
+      box-shadow:
+        var(--shadow);
 
-  gap:10px;
+    }
 
-  margin-top:34px;
-}
 
-.step{
+    wistia-player{
 
-  padding:22px 14px;
+      display:block;
 
-  text-align:center;
+      width:100%;
 
-  border-radius:20px;
+    }
 
-  background:#fff;
 
-  border:
-  1px solid var(--line);
-}
+    /* =====================================================
+       CTA
+       ===================================================== */
 
-.step b{
+    #ctaSection{
 
-  display:block;
+      display:none;
 
-  color:var(--rose);
+      padding:
+        10px
+        12px
+        45px;
 
-  font-size:13px;
+    }
 
-  letter-spacing:.08em;
 
-  text-transform:uppercase;
-}
+    #ctaSection.show{
 
-.step strong{
+      display:block;
 
-  display:block;
+      animation:
+        ctaReveal
+        .8s
+        ease
+        forwards;
 
-  margin-top:6px;
+    }
 
-  font-family:Georgia,serif;
 
-  font-size:21px;
-}
+    @keyframes ctaReveal{
 
+      from{
 
-/* =========================
-   RITUAL
-========================= */
+        opacity:0;
 
-.ritual{
+        transform:
+          translateY(25px);
 
-  display:grid;
+      }
 
-  grid-template-columns:
-  1fr 1fr;
+      to{
 
-  gap:35px;
+        opacity:1;
 
-  align-items:center;
-}
+        transform:
+          translateY(0);
 
-.ritual-visual{
+      }
 
-  min-height:420px;
+    }
 
-  border-radius:28px;
 
-  overflow:hidden;
+    .cta-card{
 
-  position:relative;
+      width:min(
+        700px,
+        100%
+      );
 
-  background:
+      margin:auto;
 
-  radial-gradient(
-    circle at 70% 30%,
-    rgba(255,218,180,.95),
-    transparent 22%
-  ),
+      padding:
+        38px
+        24px
+        30px;
 
-  radial-gradient(
-    circle at 36% 63%,
-    rgba(104,57,36,.92),
-    transparent 19%
-  ),
+      text-align:center;
 
-  linear-gradient(
-    135deg,
-    #f9ded8,
-    #d9a69b 55%,
-    #8d5546
-  );
-}
+      background:
+        rgba(255,255,255,.98);
 
-.ritual-visual:before{
+      border:
+        1px solid
+        var(--line);
 
-  content:"CAFÉ";
+      border-radius:28px;
 
-  position:absolute;
+      box-shadow:
+        var(--shadow);
 
-  left:10%;
+    }
 
-  bottom:9%;
 
-  font-family:Georgia,serif;
+    .cta-label{
 
-  font-size:
-  clamp(
-    70px,
-    10vw,
-    130px
-  );
+      display:inline-block;
 
-  font-weight:900;
+      padding:
+        8px
+        14px;
 
-  color:
-  rgba(255,255,255,.35);
+      border-radius:999px;
 
-  letter-spacing:-.08em;
-}
+      background:
+        var(--soft);
 
-.ritual-visual:after{
+      color:
+        var(--rose-dark);
 
-  content:"& MIEL";
+      font-size:12px;
 
-  position:absolute;
+      font-weight:900;
 
-  right:8%;
+      letter-spacing:.08em;
 
-  top:12%;
+      text-transform:uppercase;
 
-  font-family:Georgia,serif;
+    }
 
-  font-size:
-  clamp(
-    25px,
-    4vw,
-    52px
-  );
 
-  font-weight:700;
+    .cta-card h2{
 
-  color:
-  rgba(255,255,255,.82);
-}
+      max-width:620px;
 
-.ritual-copy h2{
-  text-align:left;
-}
+      margin:
+        18px
+        auto
+        12px;
 
-.checklist{
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-  list-style:none;
+      font-size:
+        clamp(
+          32px,
+          5vw,
+          49px
+        );
 
-  padding:0;
+      line-height:1.03;
 
-  margin:25px 0;
-}
+      letter-spacing:-.04em;
 
-.checklist li{
+    }
 
-  display:flex;
 
-  gap:12px;
+    .cta-card h2 span{
 
-  margin:14px 0;
+      color:
+        var(--rose);
 
-  color:#514447;
-}
+    }
 
-.checklist li:before{
 
-  content:"✓";
+    .cta-subtitle{
 
-  flex:
-  0 0 25px;
+      max-width:550px;
 
-  height:25px;
+      margin:
+        0
+        auto
+        20px;
 
-  border-radius:50%;
+      color:
+        var(--muted);
 
-  display:grid;
+      font-size:17px;
 
-  place-items:center;
+      line-height:1.5;
 
-  background:
-  var(--rose-light);
+    }
 
-  color:
-  var(--rose-dark);
 
-  font-weight:900;
-}
+    /* =====================================================
+       ANCORAGEM
+       ===================================================== */
 
+    .price-anchor{
 
-/* =========================
-   CTA
-========================= */
+      margin-top:15px;
 
-.cta-box{
+      color:#958589;
 
-  max-width:780px;
+      font-size:17px;
 
-  margin:65px auto 0;
+    }
 
-  padding:40px 30px;
 
-  text-align:center;
+    .price-anchor s{
 
-  background:
-  linear-gradient(
-    135deg,
-    #fff,
-    #fff0f3
-  );
+      color:#a18e93;
 
-  border:
-  2px solid var(--rose-light);
+    }
 
-  border-radius:28px;
 
-  box-shadow:
-  var(--shadow);
-}
+    .price{
 
-.cta-box h3{
+      margin:
+        3px
+        0
+        4px;
 
-  margin:0 0 10px;
+      color:
+        var(--rose-dark);
 
-  font-family:
-  Georgia,
-  serif;
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-  font-size:
-  clamp(
-    28px,
-    4vw,
-    40px
-  );
-}
+      font-size:66px;
 
-.cta-box p{
+      font-weight:900;
 
-  max-width:600px;
+      line-height:1;
 
-  margin:
-  0 auto 25px;
+    }
 
-  color:var(--muted);
 
-  font-size:17px;
-}
+    .price small{
 
-.cta{
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
-  display:inline-flex;
+      font-size:21px;
 
-  justify-content:center;
+    }
 
-  align-items:center;
 
-  width:min(
-    100%,
-    500px
-  );
+    .price-note{
 
-  padding:18px 26px;
+      color:
+        var(--muted);
 
-  border-radius:16px;
+      font-size:13px;
 
-  text-decoration:none;
+    }
 
-  background:
-  linear-gradient(
-    135deg,
-    var(--rose),
-    var(--rose-dark)
-  );
 
-  color:#fff;
+    /* =====================================================
+       URGÊNCIA
+       ===================================================== */
 
-  font-weight:900;
+    .urgency{
 
-  font-size:18px;
+      display:inline-block;
 
-  box-shadow:
-  0 12px 28px
-  rgba(166,62,88,.25);
+      margin:
+        16px
+        auto
+        20px;
 
-  transition:.2s;
-}
+      padding:
+        9px
+        15px;
 
-.cta:hover{
+      border-radius:999px;
 
-  transform:
-  translateY(-2px);
+      background:
+        var(--urgency-bg);
 
-  box-shadow:
-  0 16px 34px
-  rgba(166,62,88,.3);
-}
+      color:
+        var(--urgency-text);
 
+      font-size:13px;
 
-/* =========================
-   OFERTA
-========================= */
+      font-weight:800;
 
-.offer{
+    }
 
-  max-width:760px;
 
-  margin:auto;
+    /* =====================================================
+       BOTÃO VERDE PULSANTE
+       ===================================================== */
 
-  background:#fff;
+    .cta-button{
 
-  border:
-  2px solid var(--rose-light);
+      display:flex;
 
-  border-radius:30px;
+      align-items:center;
 
-  box-shadow:var(--shadow);
+      justify-content:center;
 
-  padding:40px;
+      width:min(
+        100%,
+        550px
+      );
 
-  text-align:center;
-}
+      min-height:66px;
 
-.price-old{
+      margin:
+        0
+        auto;
 
-  text-decoration:line-through;
+      padding:
+        17px
+        24px;
 
-  color:#998b8e;
+      border-radius:16px;
 
-  font-size:18px;
-}
+      background:
+        linear-gradient(
+          180deg,
+          var(--green) 0%,
+          var(--green-dark) 100%
+        );
 
-.price{
+      color:#ffffff;
 
-  font-family:Georgia,serif;
+      text-decoration:none;
 
-  font-size:64px;
+      font-size:18px;
 
-  line-height:1;
+      font-weight:900;
 
-  color:var(--rose-dark);
+      box-shadow:
+        0
+        12px
+        28px
+        rgba(20,160,80,.30);
 
-  font-weight:900;
+      animation:
+        greenPulse
+        1.7s
+        infinite;
 
-  margin:8px 0;
-}
+      transition:
+        .2s;
 
-.price small{
+    }
 
-  font-family:Inter,sans-serif;
 
-  font-size:20px;
-}
+    .cta-button:hover{
 
-.guarantee{
+      transform:
+        translateY(-2px);
 
-  display:flex;
+    }
 
-  align-items:center;
 
-  justify-content:center;
+    @keyframes greenPulse{
 
-  gap:15px;
+      0%,
+      100%{
 
-  margin:
-  25px auto 0;
+        transform:
+          scale(1);
 
-  max-width:570px;
+        box-shadow:
+          0
+          12px
+          28px
+          rgba(20,160,80,.30);
 
-  color:var(--muted);
-}
+      }
 
-.seal{
+      50%{
 
-  width:62px;
+        transform:
+          scale(1.025);
 
-  height:62px;
+        box-shadow:
+          0
+          17px
+          40px
+          rgba(20,160,80,.48);
 
-  border-radius:50%;
+      }
 
-  display:grid;
+    }
 
-  place-items:center;
 
-  background:var(--cream);
+    /* =====================================================
+       SEGURANÇA / GARANTIA
+       ===================================================== */
 
-  border:
-  1px solid #efd0c5;
+    .security{
 
-  font-weight:900;
+      margin-top:17px;
 
-  color:var(--rose-dark);
-}
+      color:#817376;
 
+      font-size:12px;
 
-/* =========================
-   FAQ
-========================= */
+    }
 
-.faq{
 
-  max-width:820px;
+    /* =====================================================
+       RODAPÉ
+       ===================================================== */
 
-  margin:auto;
-}
+    footer{
 
-details{
+      padding:
+        22px
+        12px
+        40px;
 
-  background:#fff;
+      text-align:center;
 
-  border:
-  1px solid var(--line);
+      color:#918386;
 
-  border-radius:16px;
+      font-size:11px;
 
-  margin:10px 0;
+    }
 
-  padding:18px 20px;
-}
 
-summary{
+    footer a{
 
-  cursor:pointer;
+      color:#918386;
 
-  font-weight:800;
-}
+      text-decoration:underline;
 
-details p{
+      margin:
+        0
+        8px;
 
-  color:var(--muted);
+    }
 
-  margin:
-  12px 0 2px;
-}
 
+    /* =====================================================
+       MOBILE
+       ===================================================== */
 
-/* =========================
-   FINAL
-========================= */
+    @media(max-width:520px){
 
-.final{
+      .hero{
 
-  text-align:center;
+        padding-top:16px;
 
-  padding:
-  80px 0
-  110px;
-}
+      }
 
-.final h2{
 
-  max-width:760px;
+      .hero h1{
 
-  margin:
-  10px auto 18px;
-}
+        font-size:36px;
 
-.micro{
+      }
 
-  max-width:760px;
 
-  margin:
-  18px auto 0;
+      .vsl{
 
-  color:#8c7e80;
+        border-width:3px;
 
-  font-size:11px;
-}
+        border-radius:16px;
 
+      }
 
-/* =========================
-   RESPONSIVO
-========================= */
 
-@media(max-width:820px){
+      .cta-card{
 
-  .grid,
-  .ritual{
-    grid-template-columns:1fr;
-  }
+        padding:
+          30px
+          17px
+          25px;
 
-  .steps{
-    grid-template-columns:
-    1fr 1fr;
-  }
+      }
 
-  .ritual-visual{
-    min-height:300px;
-  }
 
-}
+      .cta-card h2{
 
-@media(max-width:520px){
+        font-size:34px;
 
-  .wrap{
-    width:
-    min(
-      calc(100% - 22px),
-      var(--max)
-    );
-  }
+      }
 
-  .hero{
-    padding-top:20px;
-  }
 
-  .hero h1{
-    font-size:39px;
-  }
+      .price{
 
-  .vsl-shell{
-    border-width:4px;
-    border-radius:18px;
-  }
+        font-size:55px;
 
-  .steps{
-    grid-template-columns:1fr;
-  }
+      }
 
-  .offer{
-    padding:28px 18px;
-  }
 
-  .price{
-    font-size:54px;
-  }
+      .cta-button{
 
-  .cta-box{
-    padding:
-    32px 18px;
-  }
+        font-size:16px;
 
-}
+        min-height:62px;
 
-</style>
+      }
+
+    }
+
+  </style>
 
 </head>
 
@@ -902,845 +754,405 @@ details p{
 <body>
 
 
-<!-- =========================
-     HERO + VSL
-========================= -->
+  <!-- =====================================================
+       VSL
+       ===================================================== -->
 
-<header class="hero">
+  <header class="hero">
 
-<div class="wrap">
+    <div class="container">
 
 
-<div class="eyebrow">
-✨ Método Piel Suave™
-</div>
+      <div class="badge">
 
-</p>
+        ✨ Método Piel Suave™
 
+      </div>
 
-<!-- =========================
-     WISTIA
-========================= -->
 
-<div class="vsl-shell">
+      <h1>
 
-<script
-src="https://fast.wistia.com/player.js"
-async>
-</script>
+        Descubre el método para cuidar tu piel
 
-<script
-src="https://fast.wistia.com/embed/yi1sfi3p03.js"
-async
-type="module">
-</script>
+        <span>
+          antes, durante y después de la depilación.
+        </span>
 
-<style>
+      </h1>
 
-wistia-player[
-media-id='yi1sfi3p03'
-]:not(:defined){
 
-background:
-center /
-contain
-no-repeat
-url(
-'https://fast.wistia.com/embed/medias/yi1sfi3p03/swatch'
-);
+      <!-- =================================================
+           SEU VÍDEO WISTIA
+           ================================================= -->
 
-display:block;
+      <div class="vsl">
 
-filter:blur(5px);
+        <script
+          src="https://fast.wistia.com/player.js"
+          async>
+        </script>
 
-padding-top:174.44%;
-}
+        <script
+          src="https://fast.wistia.com/embed/yi1sfi3p03.js"
+          async
+          type="module">
+        </script>
 
-</style>
+        <style>
 
+          wistia-player[
+            media-id='yi1sfi3p03'
+          ]:not(:defined){
 
-<wistia-player
-media-id="yi1sfi3p03"
-aspect="0.5732484076433121">
-</wistia-player>
+            background:
+              center / contain
+              no-repeat
+              url(
+                'https://fast.wistia.com/embed/medias/yi1sfi3p03/swatch'
+              );
 
+            display:block;
 
-</div>
+            filter:
+              blur(5px);
 
+            padding-top:
+              174.44%;
 
-</div>
+          }
 
-</header>
+        </style>
 
 
-<!-- =========================
-     IDEIA CENTRAL
-========================= -->
+        <wistia-player
+          media-id="yi1sfi3p03"
+          aspect="0.5732484076433121">
+        </wistia-player>
 
-<section class="section alt">
+      </div>
 
-<div class="wrap">
 
+    </div>
 
-<div class="kicker">
-La idea que cambia la rutina
-</div>
+  </header>
 
 
-<h2>
 
-No necesitas necesariamente
-más productos.<br>
+  <!-- =====================================================
+       CTA
+       ===================================================== -->
 
-Necesitas una mejor secuencia.
+  <section
+    id="ctaSection">
 
-</h2>
+    <div class="container">
 
 
-<p class="lead">
+      <div class="cta-card">
 
-La depilación, la exfoliación y la hidratación
-no son exactamente el mismo momento.
 
-Método Piel Suave™ organiza cada etapa
-para que dejes de improvisar.
+        <div class="cta-label">
 
-</p>
+          ✨ ACCESO AL MÉTODO PIEL SUAVE™
 
+        </div>
 
-<div class="grid">
 
+        <h2>
 
-<article class="card">
+          ¿Quieres descubrir cómo
 
-<div class="icon">①</div>
+          <span>
+            organizar tu rutina?
+          </span>
 
-<h3>
-Preparar
-</h3>
+        </h2>
 
-<p>
 
-Aprende qué cuidados tener en cuenta
-antes de depilarte y cómo evitar hábitos
-innecesariamente agresivos.
+        <p class="cta-subtitle">
 
-</p>
+          Accede al método completo y descubre
+          cómo organizar tu rutina de depilación,
+          incluido el Ritual Café & Miel™.
 
-</article>
+        </p>
 
 
-<article class="card">
+        <!-- ANCORAGEM -->
 
-<div class="icon">②</div>
+        <div class="price-anchor">
 
-<h3>
-Depilar
-</h3>
+          Valor de todo el contenido:
 
-<p>
+          <s>
+            MX$497
+          </s>
 
-Entiende cómo adaptar tu rutina
-al método de depilación que utilizas.
+        </div>
 
-</p>
 
-</article>
+        <!-- PREÇO -->
 
+        <div class="price">
 
-<article class="card">
+          <small>
+            MX$
+          </small>
 
-<div class="icon">③</div>
+          197
 
-<h3>
-Recuperar
-</h3>
+        </div>
 
-<p>
 
-Descubre qué hacer cuando la piel
-está más sensible y cuándo conviene
-simplemente dejarla tranquila.
+        <div class="price-note">
 
-</p>
+          Pago único · Acceso digital
 
-</article>
+        </div>
 
 
-</div>
+        <!-- URGÊNCIA -->
 
+        <div class="urgency">
 
-<div class="steps">
+          🔥 Precio especial disponible por tiempo limitado
 
-<div class="step">
-<b>Etapa 1</b>
-<strong>Preparar</strong>
-</div>
+        </div>
 
-<div class="step">
-<b>Etapa 2</b>
-<strong>Depilar</strong>
-</div>
 
-<div class="step">
-<b>Etapa 3</b>
-<strong>Recuperar</strong>
-</div>
+        <!-- =================================================
+             SEU CHECKOUT HOTMART
+             ================================================= -->
 
-<div class="step">
-<b>Etapa 4</b>
-<strong>Renovar</strong>
-</div>
+        <a
 
-<div class="step">
-<b>Etapa 5</b>
-<strong>Hidratar</strong>
-</div>
+          href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10"
 
-</div>
+          class="cta-button"
 
+        >
 
-</div>
+          QUIERO ACCEDER AL MÉTODO →
 
-</section>
+        </a>
 
 
-<!-- =========================
-     RITUAL CAFÉ & MIEL
-========================= -->
+        <div class="security">
 
-<section class="section">
+          🔒 Pago seguro · Acceso inmediato · Garantía de 7 días
 
-<div class="wrap ritual">
+        </div>
 
 
-<div class="ritual-visual">
-</div>
+      </div>
 
+    </div>
 
-<div class="ritual-copy">
+  </section>
 
-<div
-class="kicker"
-style="text-align:left">
 
-Dentro del método
 
-</div>
+  <!-- =====================================================
+       RODAPÉ
+       ===================================================== -->
 
+  <footer>
 
-<h2>
-Conoce el Ritual Café & Miel™
-</h2>
+    © 2026 Método Piel Suave™
 
+    <br><br>
 
-<p
-class="lead"
-style="text-align:left">
+    <a href="/terminos-de-uso.html">
 
-El café usado que normalmente termina
-en la basura se convierte en parte de
-un ritual de exfoliación corporal
-cuidadosamente organizado.
+      Términos de uso
 
-</p>
+    </a>
 
 
-<ul class="checklist">
+    <a href="/politica-de-privacidad.html">
 
-<li>
-Aprende cómo preparar el ritual paso a paso.
-</li>
+      Política de privacidad
 
-<li>
-Descubre cuándo incorporarlo dentro de tu rutina.
-</li>
+    </a>
 
-<li>
-Aprende en qué zonas y con qué frecuencia utilizarlo.
-</li>
+  </footer>
 
-<li>
-Conoce cuándo NO utilizarlo y cuándo dejar descansar la piel.
-</li>
 
-</ul>
 
+  <!-- =====================================================
+       JAVASCRIPT — DELAY DO CTA
+       ===================================================== -->
 
-<p style="color:var(--muted)">
+  <script>
 
-No se trata de frotar café con fuerza.
+    /*
+    =========================================================
+    DELAY DO CTA
 
-Se trata de entender cómo, cuándo y por qué
-incorporar una exfoliación suave dentro de una
-rutina de cuidado corporal.
+    3000 = 3 segundos
+    5000 = 5 segundos
+    10000 = 10 segundos
 
-</p>
+    O CTA aparece:
 
+    VSL termina
+          ↓
+    espera 3 segundos
+          ↓
+    CTA aparece
+    =========================================================
+    */
 
-</div>
 
+    const CTA_DELAY_MS = 450000;
 
-</div>
 
+    const ctaSection =
+      document.getElementById(
+        'ctaSection'
+      );
 
-<!-- =========================
-     CTA NO MEIO DA PÁGINA
-========================= -->
 
-<div class="wrap">
+    const wistiaPlayer =
+      document.querySelector(
+        'wistia-player'
+      );
 
 
-<div class="cta-box">
+    let ctaShown = false;
 
 
-<h3>
-¿Quieres aprender la rutina completa?
-</h3>
 
+    function revealCTA(){
 
-<p>
+      if(ctaShown){
 
-Descubre cómo organizar los cuidados
-antes, durante y después de la depilación
-con el Método Piel Suave™.
+        return;
 
-</p>
+      }
 
 
-<a
-class="cta"
-href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">
+      ctaShown = true;
 
-QUIERO CONOCER EL MÉTODO
 
-</a>
+      setTimeout(
 
+        function(){
 
-</div>
+          ctaSection.classList.add(
+            'show'
+          );
 
 
-</div>
+          /*
+            Leva o visitante suavemente
+            até o CTA.
+          */
 
+          setTimeout(
 
-</section>
+            function(){
 
+              ctaSection.scrollIntoView({
 
-<!-- =========================
-     MÓDULOS
-========================= -->
+                behavior:
+                  'smooth',
 
-<section class="section alt">
+                block:
+                  'center'
 
-<div class="wrap">
+              });
 
+            },
 
-<div class="kicker">
-Todo organizado para ti
-</div>
+            150
 
+          );
 
-<h2>
-Deja de preguntarte<br>
-“¿qué hago hoy?”
-</h2>
+        },
 
+        CTA_DELAY_MS
 
-<p class="lead">
+      );
 
-Recibes un sistema sencillo para saber
-qué hacer antes, después y entre tus
-sesiones de depilación.
+    }
 
-</p>
 
 
-<div class="grid">
+    /*
+    =========================================================
+    DETECTA O FINAL DA VSL
+    =========================================================
+    */
 
+    if(wistiaPlayer){
 
-<article class="card">
+      wistiaPlayer.addEventListener(
 
-<div class="icon">📖</div>
+        'ended',
 
-<h3>
-Módulo 1
-</h3>
+        revealCTA
 
-<p>
+      );
 
-<b>
-Descubre los errores que estás
-cometiendo al depilarte.
-</b>
 
-<br><br>
+      /*
+        FALLBACK
 
-Identifica hábitos que pueden estar
-complicando tu rutina.
+        Caso o evento "ended" do Wistia
+        não seja disparado, libera o CTA
+        quando o vídeo chegar a aproximadamente
+        98,5% da duração.
+      */
 
-</p>
+      wistiaPlayer.addEventListener(
 
-</article>
+        'timeupdate',
 
+        function(){
 
-<article class="card">
+          try{
 
-<div class="icon">✨</div>
+            if(
 
-<h3>
-Módulo 2
-</h3>
+              typeof wistiaPlayer.duration
+              === 'number'
 
-<p>
+              &&
 
-<b>
-Los 3 secretos de una buena preparación.
-</b>
+              wistiaPlayer.duration > 0
 
-<br><br>
+              &&
 
-Aprende a preparar tu piel
-con una rutina más ordenada.
+              (
+                wistiaPlayer.currentTime /
+                wistiaPlayer.duration
+              ) >= 0.985
 
-</p>
+            ){
 
-</article>
+              revealCTA();
 
+            }
 
-<article class="card">
+          }
 
-<div class="icon">☕</div>
+          catch(error){
 
-<h3>
-Módulo 3
-</h3>
+            console.log(
+              'Wistia:',
+              error
+            );
 
-<p>
+          }
 
-<b>
-El Ritual Café & Miel™ Premium.
-</b>
+        }
 
-<br><br>
+      );
 
-Preparación, aplicación,
-frecuencia y cuidados.
+    }
 
-</p>
-
-</article>
-
-
-<article class="card">
-
-<div class="icon">🌸</div>
-
-<h3>
-Módulo 4
-</h3>
-
-<p>
-
-<b>
-El secreto después de depilarte.
-</b>
-
-<br><br>
-
-Qué hacer y qué evitar cuando
-tu piel está sensible.
-
-</p>
-
-</article>
-
-
-<article class="card">
-
-<div class="icon">🗓️</div>
-
-<h3>
-Módulo 5
-</h3>
-
-<p>
-
-<b>
-Calendario Piel Suave™ de 21 días.
-</b>
-
-<br><br>
-
-Un paso a paso para dejar
-de improvisar.
-
-</p>
-
-</article>
-
-
-<article class="card">
-
-<div class="icon">💗</div>
-
-<h3>
-Bonos
-</h3>
-
-<p>
-
-<b>
-3 guías adicionales.
-</b>
-
-<br><br>
-
-Errores, guía de emergencia
-e ingredientes para tu rutina.
-
-</p>
-
-</article>
-
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     RESULTADO ESPERADO
-========================= -->
-
-<section class="section">
-
-<div class="wrap">
-
-
-<div class="kicker">
-Una nueva forma de organizar tu rutina
-</div>
-
-
-<h2>
-
-Una rutina clara.<br>
-
-Una piel que puedas cuidar
-con más intención.
-
-</h2>
-
-
-<p class="lead">
-
-El objetivo no es prometer una piel
-“perfecta” de la noche a la mañana.
-
-Es ayudarte a entender tu rutina
-y dejar de cambiar de producto cada vez
-que aparece un problema.
-
-</p>
-
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     OFERTA
-========================= -->
-
-<section
-class="section alt"
-id="comprar">
-
-<div class="wrap">
-
-
-<div class="offer">
-
-
-<div class="kicker">
-Acceso inmediato
-</div>
-
-
-<h2>
-
-Empieza a cuidar tu piel
-con una rutina clara
-
-</h2>
-
-
-<p class="price-old">
-
-Valor de todo el contenido:
-MX$497
-
-</p>
-
-
-<div class="price">
-
-<small>MX$</small>197
-
-</div>
-
-
-<p
-style="color:var(--muted);margin-top:0">
-
-Pago único · Sin mensualidades
-
-</p>
-
-
-<a
-class="cta"
-href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">
-
-QUIERO EL MÉTODO PIEL SUAVE™
-
-</a>
-
-
-<div class="guarantee">
-
-
-<div class="seal">
-
-7<br>DÍAS
-
-</div>
-
-
-<div style="text-align:left">
-
-<strong>
-Garantía de 7 días
-</strong>
-
-<br>
-
-<span>
-
-Conoce el método y, si dentro del período
-de garantía sientes que no es para ti,
-puedes solicitar tu reembolso.
-
-</span>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     FAQ
-========================= -->
-
-<section class="section">
-
-<div class="wrap">
-
-
-<div class="kicker">
-Preguntas frecuentes
-</div>
-
-
-<h2>
-Antes de empezar
-</h2>
-
-
-<div class="faq">
-
-
-<details>
-
-<summary>
-¿Necesito dejar de depilarme?
-</summary>
-
-<p>
-
-No.
-
-El método está diseñado para ayudarte
-a organizar los cuidados alrededor
-de tu rutina de depilación.
-
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-¿El Ritual Café & Miel™ es obligatorio?
-</summary>
-
-<p>
-
-Es una parte importante del método,
-pero la rutina también enseña cuándo
-renovar, cuándo hidratar y cuándo
-dejar descansar la piel.
-
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-¿Puedo usarlo inmediatamente después
-de depilarme?
-</summary>
-
-<p>
-
-No.
-
-El método enseña a respetar los momentos
-de mayor sensibilidad y cuándo evitar
-la exfoliación.
-
-No se recomienda frotar una piel
-recién depilada.
-
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-¿Funciona igual para todas las mujeres?
-</summary>
-
-<p>
-
-No necesariamente.
-
-La piel y la forma de depilarse varían.
-
-El método es educativo y no sustituye
-la evaluación de un dermatólogo.
-
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-¿Qué recibo después de comprar?
-</summary>
-
-<p>
-
-Acceso al Método Piel Suave™,
-sus módulos, el Ritual Café & Miel™,
-el Calendario de 21 días y los bonos
-incluidos en la oferta.
-
-</p>
-
-</details>
-
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     CTA FINAL
-========================= -->
-
-<section class="final">
-
-<div class="wrap">
-
-
-<div class="eyebrow">
-Tu piel. Tu rutina. Tu momento. 💗
-</div>
-
-
-<h2>
-
-Deja de improvisar y empieza
-a cuidar tu piel con intención.
-
-</h2>
-
-
-<p class="lead">
-
-Accede ahora al Método Piel Suave™
-por MX$197.
-
-</p>
-
-
-<a
-class="cta"
-href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10">
-
-QUIERO EMPEZAR AHORA
-
-</a>
-
-
-<p class="micro">
-
-Información educativa de cuidado corporal.
-Los resultados y la experiencia pueden variar.
-
-Si presentas irritación persistente,
-dolor, infección u otros síntomas
-preocupantes, busca orientación profesional.
-
-</p>
-
-
-</div>
-
-</section>
-
-
-<footer>
-
-© 2026 Método Piel Suave™ ·
-Todos los derechos reservados.
-
-</footer>
+  </script>
 
 
 </body>
