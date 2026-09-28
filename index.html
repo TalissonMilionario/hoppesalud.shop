@@ -1,40 +1,22 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-
 <head>
 
-  <!-- =====================================================
+  <!-- =========================
        META PIXEL
-       ===================================================== -->
-
+       ========================= -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {
-      if(f.fbq)return;
-      n=f.fbq=function(){
-        n.callMethod ?
-        n.callMethod.apply(n,arguments) : n.queue.push(arguments)
-      };
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
 
-      if(!f._fbq)f._fbq=n;
-
-      n.push=n;
-      n.loaded=!0;
-      n.version='2.0';
-      n.queue=[];
-
-      t=b.createElement(e);
-      t.async=!0;
-      t.src=v;
-
-      s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }
-    (window, document, 'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '2348742122604542');
-    fbq('track', 'PageView');
+  fbq('init', '2348742122604542');
+  fbq('track', 'PageView');
   </script>
 
   <noscript>
@@ -46,11 +28,9 @@
     />
   </noscript>
 
-
-  <!-- =====================================================
+  <!-- =========================
        CONFIGURAÇÕES
-       ===================================================== -->
-
+       ========================= -->
   <meta charset="UTF-8">
 
   <meta
@@ -60,49 +40,40 @@
 
   <meta
     name="description"
-    content="Método Piel Suave™"
+    content="Método Piel Suave™ — una rutina organizada para cuidar tu piel antes, durante y después de la depilación."
   >
 
   <title>
-    Método Piel Suave™
+    Método Piel Suave™ | Tu rutina de cuidado corporal
   </title>
 
 
-  <!-- =====================================================
+  <!-- =========================
        CSS
-       ===================================================== -->
-
+       ========================= -->
   <style>
 
     :root{
-
       --bg:#fff8f7;
+      --paper:#ffffff;
+      --ink:#241c1d;
+      --muted:#6f6264;
 
-      --white:#ffffff;
-
-      --text:#241c1d;
-
-      --muted:#76676a;
+      --green:#16a34a;
+      --green-dark:#0f7a36;
+      --green-soft:#dcfce7;
 
       --rose:#c95b72;
-
       --rose-dark:#a63e58;
-
-      --green:#18a957;
-
-      --green-dark:#0b853e;
 
       --line:#eadbdd;
 
-      --soft:#fff0f3;
-
-      --urgency-bg:#fff1e9;
-
-      --urgency-text:#9b4d35;
-
       --shadow:
-        0 20px 60px rgba(70,30,40,.14);
+        0 18px 55px rgba(74,35,42,.12);
 
+      --radius:24px;
+
+      --max:1080px;
     }
 
 
@@ -117,69 +88,100 @@
 
 
     body{
-
       margin:0;
-
-      background:
-        radial-gradient(
-          circle at top,
-          #fff0f3 0%,
-          #fff8f7 42%,
-          #ffffff 100%
-        );
-
-      color:var(--text);
 
       font-family:
         Inter,
-        Arial,
-        Helvetica,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
         sans-serif;
 
-      line-height:1.5;
+      color:var(--ink);
 
+      background:
+        radial-gradient(
+          circle at 8% 8%,
+          rgba(248,220,226,.75),
+          transparent 28%
+        ),
+
+        radial-gradient(
+          circle at 92% 22%,
+          rgba(255,240,233,.95),
+          transparent 30%
+        ),
+
+        var(--bg);
+
+      line-height:1.55;
     }
 
 
-    /* =====================================================
-       VSL
-       ===================================================== */
+    body:before{
+      content:"";
 
-    .hero{
+      position:fixed;
 
-      text-align:center;
+      inset:0;
 
-      padding:
-        22px
-        12px
-        45px;
+      pointer-events:none;
 
+      opacity:.25;
+
+      background-image:
+        radial-gradient(
+          rgba(80,45,52,.09) .7px,
+          transparent .7px
+        );
+
+      background-size:14px 14px;
+
+      mask-image:
+        linear-gradient(
+          to bottom,
+          black,
+          transparent 75%
+        );
     }
 
 
-    .container{
-
-      width:min(
-        940px,
-        calc(100% - 20px)
-      );
+    .wrap{
+      width:
+        min(
+          calc(100% - 32px),
+          var(--max)
+        );
 
       margin:auto;
-
     }
 
 
-    .badge{
+    /* =========================
+       HERO
+       ========================= */
 
-      display:inline-block;
+    .hero{
+      padding:30px 0 45px;
 
-      padding:
-        8px
-        14px;
+      text-align:center;
+    }
+
+
+    .eyebrow{
+      display:inline-flex;
+
+      align-items:center;
+
+      gap:8px;
+
+      padding:8px 13px;
 
       border-radius:999px;
 
-      background:var(--white);
+      background:#fff;
 
       border:1px solid var(--line);
 
@@ -187,26 +189,22 @@
 
       font-size:12px;
 
-      font-weight:900;
+      font-weight:800;
 
       letter-spacing:.08em;
 
       text-transform:uppercase;
 
       box-shadow:
-        0 8px 25px rgba(70,30,40,.05);
-
+        0 8px 25px rgba(74,35,42,.06);
     }
 
 
     .hero h1{
 
-      max-width:850px;
+      max-width:900px;
 
-      margin:
-        18px
-        auto
-        24px;
+      margin:20px auto 14px;
 
       font-family:
         Georgia,
@@ -215,73 +213,102 @@
 
       font-size:
         clamp(
-          34px,
-          5.5vw,
-          62px
+          39px,
+          6vw,
+          72px
         );
 
-      line-height:1;
+      line-height:.98;
 
       letter-spacing:-.045em;
-
     }
 
 
     .hero h1 span{
-
       color:var(--rose);
-
     }
 
 
-    /* =====================================================
+    .hero .sub{
+
+      max-width:720px;
+
+      margin:
+        0 auto 26px;
+
+      color:var(--muted);
+
+      font-size:
+        clamp(
+          17px,
+          2.2vw,
+          21px
+        );
+    }
+
+
+    /* =========================
        WISTIA
-       ===================================================== */
+       ========================= */
 
-    .vsl{
+    .vsl-shell{
 
-      max-width:900px;
+      position:relative;
 
-      margin:auto;
+      max-width:920px;
 
-      border-radius:22px;
+      margin:0 auto;
+
+      border-radius:var(--radius);
 
       overflow:hidden;
 
-      background:#111;
+      background:#171214;
+
+      box-shadow:var(--shadow);
 
       border:
-        5px solid
-        rgba(255,255,255,.95);
-
-      box-shadow:
-        var(--shadow);
-
+        7px solid rgba(255,255,255,.9);
     }
 
 
-    wistia-player{
+    /* =========================
+       AVISO ANTES DOS 8 MIN
+       ========================= */
 
-      display:block;
+    .locked-message{
 
-      width:100%;
+      margin:
+        20px auto 0;
 
+      max-width:650px;
+
+      padding:
+        13px 18px;
+
+      border-radius:14px;
+
+      background:#fff;
+
+      border:
+        1px solid var(--line);
+
+      color:var(--muted);
+
+      font-size:14px;
     }
 
 
-    /* =====================================================
+    /* =========================
        CTA
-       ===================================================== */
+       ========================= */
 
     #ctaSection{
 
       display:none;
 
       padding:
-        10px
-        12px
-        45px;
-
+        35px 0 55px;
     }
 
 
@@ -290,23 +317,18 @@
       display:block;
 
       animation:
-        ctaReveal
-        .8s
-        ease
-        forwards;
-
+        reveal .75s ease both;
     }
 
 
-    @keyframes ctaReveal{
+    @keyframes reveal{
 
       from{
 
         opacity:0;
 
         transform:
-          translateY(25px);
-
+          translateY(20px);
       }
 
       to{
@@ -315,78 +337,83 @@
 
         transform:
           translateY(0);
-
       }
-
     }
 
 
-    .cta-card{
+    /* =========================
+       OFERTA
+       ========================= */
 
-      width:min(
-        700px,
-        100%
-      );
+    .offer{
+
+      max-width:760px;
 
       margin:auto;
 
-      padding:
-        38px
-        24px
-        30px;
+      background:#fff;
+
+      border:
+        2px solid var(--green-soft);
+
+      border-radius:30px;
+
+      box-shadow:var(--shadow);
+
+      padding:38px;
 
       text-align:center;
 
-      background:
-        rgba(255,255,255,.98);
+      position:relative;
 
-      border:
-        1px solid
-        var(--line);
-
-      border-radius:28px;
-
-      box-shadow:
-        var(--shadow);
-
+      overflow:hidden;
     }
 
 
-    .cta-label{
+    .offer:before{
 
-      display:inline-block;
+      content:"";
 
-      padding:
-        8px
-        14px;
+      position:absolute;
 
-      border-radius:999px;
+      width:220px;
 
-      background:
-        var(--soft);
+      height:220px;
 
-      color:
-        var(--rose-dark);
+      border-radius:50%;
 
-      font-size:12px;
+      background:#f0fdf4;
+
+      top:-110px;
+
+      right:-80px;
+    }
+
+
+    .kicker{
+
+      position:relative;
+
+      text-align:center;
+
+      color:var(--green-dark);
 
       font-weight:900;
 
-      letter-spacing:.08em;
-
       text-transform:uppercase;
 
+      letter-spacing:.13em;
+
+      font-size:12px;
     }
 
 
-    .cta-card h2{
+    .offer h2{
 
-      max-width:620px;
+      position:relative;
 
       margin:
-        18px
-        auto
-        12px;
+        10px auto 12px;
 
       font-family:
         Georgia,
@@ -395,203 +422,143 @@
 
       font-size:
         clamp(
-          32px,
-          5vw,
-          49px
+          31px,
+          4.4vw,
+          50px
         );
 
-      line-height:1.03;
+      line-height:1.04;
 
-      letter-spacing:-.04em;
+      letter-spacing:-.035em;
 
+      max-width:680px;
     }
 
 
-    .cta-card h2 span{
+    .lead{
 
-      color:
-        var(--rose);
+      position:relative;
 
-    }
-
-
-    .cta-subtitle{
-
-      max-width:550px;
+      max-width:650px;
 
       margin:
-        0
-        auto
-        20px;
+        0 auto 22px;
 
-      color:
-        var(--muted);
+      text-align:center;
 
-      font-size:17px;
+      color:var(--muted);
 
-      line-height:1.5;
-
+      font-size:18px;
     }
 
 
-    /* =====================================================
-       ANCORAGEM
-       ===================================================== */
+    .price-old{
 
-    .price-anchor{
+      position:relative;
 
-      margin-top:15px;
+      text-decoration:line-through;
 
-      color:#958589;
+      color:#998b8e;
 
-      font-size:17px;
+      font-size:18px;
 
-    }
-
-
-    .price-anchor s{
-
-      color:#a18e93;
-
+      margin:
+        15px 0 4px;
     }
 
 
     .price{
 
-      margin:
-        3px
-        0
-        4px;
-
-      color:
-        var(--rose-dark);
+      position:relative;
 
       font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-      font-size:66px;
-
-      font-weight:900;
+      font-size:64px;
 
       line-height:1;
 
+      color:var(--rose-dark);
+
+      font-weight:900;
+
+      margin:7px 0;
     }
 
 
     .price small{
 
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+      font-family:Inter,sans-serif;
 
-      font-size:21px;
-
+      font-size:20px;
     }
 
 
-    .price-note{
+    .payment{
 
-      color:
-        var(--muted);
+      position:relative;
 
-      font-size:13px;
-
-    }
-
-
-    /* =====================================================
-       URGÊNCIA
-       ===================================================== */
-
-    .urgency{
-
-      display:inline-block;
+      color:var(--muted);
 
       margin:
-        16px
-        auto
-        20px;
-
-      padding:
-        9px
-        15px;
-
-      border-radius:999px;
-
-      background:
-        var(--urgency-bg);
-
-      color:
-        var(--urgency-text);
-
-      font-size:13px;
-
-      font-weight:800;
-
+        0 0 20px;
     }
 
 
-    /* =====================================================
-       BOTÃO VERDE PULSANTE
-       ===================================================== */
+    /* =========================
+       BOTÃO VERDE
+       ========================= */
 
     .cta-button{
 
-      display:flex;
+      position:relative;
 
-      align-items:center;
+      display:flex;
 
       justify-content:center;
 
-      width:min(
-        100%,
-        550px
-      );
+      align-items:center;
 
-      min-height:66px;
+      width:
+        min(
+          100%,
+          560px
+        );
 
-      margin:
-        0
-        auto;
+      margin:0 auto;
 
       padding:
-        17px
-        24px;
+        20px 26px;
 
       border-radius:16px;
 
-      background:
-        linear-gradient(
-          180deg,
-          var(--green) 0%,
-          var(--green-dark) 100%
-        );
-
-      color:#ffffff;
-
       text-decoration:none;
 
-      font-size:18px;
+      background:
+        linear-gradient(
+          135deg,
+          var(--green),
+          var(--green-dark)
+        );
 
-      font-weight:900;
+      color:#fff;
+
+      font-weight:950;
+
+      font-size:19px;
 
       box-shadow:
-        0
-        12px
-        28px
-        rgba(20,160,80,.30);
+        0 12px 30px
+        rgba(22,163,74,.30);
 
       animation:
-        greenPulse
-        1.7s
-        infinite;
+        pulse 1.7s infinite;
 
       transition:
-        .2s;
-
+        transform .2s,
+        box-shadow .2s;
     }
 
 
@@ -600,148 +567,215 @@
       transform:
         translateY(-2px);
 
+      box-shadow:
+        0 16px 35px
+        rgba(22,163,74,.38);
+
+      animation:none;
     }
 
 
-    @keyframes greenPulse{
+    @keyframes pulse{
 
-      0%,
-      100%{
+      0%,100%{
 
-        transform:
-          scale(1);
+        transform:scale(1);
 
         box-shadow:
-          0
-          12px
-          28px
-          rgba(20,160,80,.30);
-
+          0 12px 30px
+          rgba(22,163,74,.30);
       }
 
       50%{
 
-        transform:
-          scale(1.025);
+        transform:scale(1.025);
 
         box-shadow:
-          0
-          17px
-          40px
-          rgba(20,160,80,.48);
-
+          0 15px 38px
+          rgba(22,163,74,.48);
       }
-
     }
 
 
-    /* =====================================================
-       SEGURANÇA / GARANTIA
-       ===================================================== */
+    .urgency{
+
+      position:relative;
+
+      margin:
+        18px auto 0;
+
+      color:#b45309;
+
+      font-weight:800;
+
+      font-size:14px;
+    }
+
 
     .security{
 
-      margin-top:17px;
+      position:relative;
 
-      color:#817376;
+      margin:
+        17px auto 0;
 
-      font-size:12px;
+      color:#6f6264;
 
+      font-size:13px;
     }
 
 
-    /* =====================================================
-       RODAPÉ
-       ===================================================== */
+    /* =========================
+       GARANTIA
+       ========================= */
+
+    .guarantee{
+
+      position:relative;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      gap:15px;
+
+      margin:
+        25px auto 0;
+
+      max-width:570px;
+
+      color:var(--muted);
+
+      text-align:left;
+    }
+
+
+    .seal{
+
+      width:62px;
+
+      height:62px;
+
+      flex:
+        0 0 62px;
+
+      border-radius:50%;
+
+      display:grid;
+
+      place-items:center;
+
+      background:#fff7ed;
+
+      border:
+        1px solid #fed7aa;
+
+      font-weight:900;
+
+      color:var(--rose-dark);
+
+      text-align:center;
+
+      line-height:1.05;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
 
     footer{
 
       padding:
-        22px
-        12px
-        40px;
+        22px 0 38px;
+
+      color:#9a8b8e;
+
+      font-size:12px;
 
       text-align:center;
-
-      color:#918386;
-
-      font-size:11px;
-
     }
 
 
     footer a{
 
-      color:#918386;
+      color:#8c7e80;
 
-      text-decoration:underline;
+      text-decoration:none;
 
       margin:
-        0
-        8px;
-
+        0 8px;
     }
 
 
-    /* =====================================================
+    footer a:hover{
+      text-decoration:underline;
+    }
+
+
+    /* =========================
        MOBILE
-       ===================================================== */
+       ========================= */
 
     @media(max-width:520px){
 
+      .wrap{
+
+        width:
+          min(
+            calc(100% - 22px),
+            var(--max)
+          );
+      }
+
+
       .hero{
 
-        padding-top:16px;
-
+        padding-top:20px;
       }
 
 
       .hero h1{
 
-        font-size:36px;
-
+        font-size:39px;
       }
 
 
-      .vsl{
+      .vsl-shell{
 
-        border-width:3px;
+        border-width:4px;
 
-        border-radius:16px;
-
+        border-radius:18px;
       }
 
 
-      .cta-card{
+      .offer{
 
         padding:
-          30px
-          17px
-          25px;
-
-      }
-
-
-      .cta-card h2{
-
-        font-size:34px;
-
+          27px 18px;
       }
 
 
       .price{
 
-        font-size:55px;
-
+        font-size:54px;
       }
 
 
       .cta-button{
 
-        font-size:16px;
+        font-size:17px;
 
-        min-height:62px;
+        padding:
+          19px 16px;
+      }
 
+
+      .guarantee{
+
+        align-items:flex-start;
       }
 
     }
@@ -754,16 +788,16 @@
 <body>
 
 
-  <!-- =====================================================
-       VSL
-       ===================================================== -->
+  <!-- =========================
+       PARTE PRINCIPAL
+       ========================= -->
 
   <header class="hero">
 
-    <div class="container">
+    <div class="wrap">
 
 
-      <div class="badge">
+      <div class="eyebrow">
 
         ✨ Método Piel Suave™
 
@@ -772,7 +806,7 @@
 
       <h1>
 
-        Descubre el método para cuidar tu piel
+        La rutina que puede ayudarte a cuidar tu piel
 
         <span>
           antes, durante y después de la depilación.
@@ -781,16 +815,26 @@
       </h1>
 
 
-      <!-- =================================================
-           SEU VÍDEO WISTIA
-           ================================================= -->
+      <p class="sub">
 
-      <div class="vsl">
+        Descubre cómo organizar mejor
+        tu rutina de cuidado corporal.
+
+      </p>
+
+
+      <!-- =========================
+           VSL WISTIA
+           ========================= -->
+
+      <div class="vsl-shell">
+
 
         <script
           src="https://fast.wistia.com/player.js"
           async>
         </script>
+
 
         <script
           src="https://fast.wistia.com/embed/yi1sfi3p03.js"
@@ -798,36 +842,51 @@
           type="module">
         </script>
 
+
         <style>
 
-          wistia-player[
-            media-id='yi1sfi3p03'
-          ]:not(:defined){
+          wistia-player[media-id='yi1sfi3p03']:not(:defined){
 
             background:
-              center / contain
-              no-repeat
+              center / contain no-repeat
               url(
                 'https://fast.wistia.com/embed/medias/yi1sfi3p03/swatch'
               );
 
             display:block;
 
-            filter:
-              blur(5px);
+            filter:blur(5px);
 
-            padding-top:
-              174.44%;
-
+            padding-top:174.44%;
           }
 
         </style>
 
 
         <wistia-player
+
+          id="meuVideo"
+
           media-id="yi1sfi3p03"
+
           aspect="0.5732484076433121">
+
         </wistia-player>
+
+
+      </div>
+
+
+      <!-- =========================
+           MENSAGEM ANTES DOS 8 MIN
+           ========================= -->
+
+      <div
+        class="locked-message"
+        id="lockedMessage">
+
+        ▶ Mira la VSL.
+        El acceso al método se mostrará al llegar a los 8 minutos.
 
       </div>
 
@@ -838,38 +897,39 @@
 
 
 
-  <!-- =====================================================
+  <!-- ==================================================
        CTA
-       ===================================================== -->
+       
+       ESTE BLOCO FICA ESCONDIDO.
+       
+       APARECE QUANDO O VÍDEO CHEGAR EM 08:00.
+       ================================================== -->
 
-  <section
-    id="ctaSection">
-
-    <div class="container">
-
-
-      <div class="cta-card">
+  <section id="ctaSection">
 
 
-        <div class="cta-label">
+    <div class="wrap">
 
-          ✨ ACCESO AL MÉTODO PIEL SUAVE™
+
+      <div class="offer">
+
+
+        <div class="kicker">
+
+          ✨ Acceso al Método Piel Suave™
 
         </div>
 
 
         <h2>
 
-          ¿Quieres descubrir cómo
-
-          <span>
-            organizar tu rutina?
-          </span>
+          ¿Quieres descubrir
+          cómo organizar tu rutina?
 
         </h2>
 
 
-        <p class="cta-subtitle">
+        <p class="lead">
 
           Accede al método completo y descubre
           cómo organizar tu rutina de depilación,
@@ -878,57 +938,36 @@
         </p>
 
 
-        <!-- ANCORAGEM -->
+        <p class="price-old">
 
-        <div class="price-anchor">
+          Valor de todo el contenido: MX$497
 
-          Valor de todo el contenido:
+        </p>
 
-          <s>
-            MX$497
-          </s>
-
-        </div>
-
-
-        <!-- PREÇO -->
 
         <div class="price">
 
-          <small>
-            MX$
-          </small>
-
-          197
+          <small>MX$</small>197
 
         </div>
 
 
-        <div class="price-note">
+        <p class="payment">
 
-          Pago único · Acceso digital
+          Pago único · Sin mensualidades
 
-        </div>
-
-
-        <!-- URGÊNCIA -->
-
-        <div class="urgency">
-
-          🔥 Precio especial disponible por tiempo limitado
-
-        </div>
+        </p>
 
 
-        <!-- =================================================
+        <!-- =========================
              SEU CHECKOUT HOTMART
-             ================================================= -->
+             ========================= -->
 
         <a
 
-          href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10"
-
           class="cta-button"
+
+          href="https://pay.hotmart.com/X107729536D?off=genpcaqw&checkoutMode=10"
 
         >
 
@@ -937,224 +976,337 @@
         </a>
 
 
-        <div class="security">
+        <p class="urgency">
+
+          🔥 Precio especial disponible por tiempo limitado
+
+        </p>
+
+
+        <p class="security">
 
           🔒 Pago seguro · Acceso inmediato · Garantía de 7 días
+
+        </p>
+
+
+        <!-- =========================
+             GARANTIA
+             ========================= -->
+
+        <div class="guarantee">
+
+
+          <div class="seal">
+
+            7<br>DÍAS
+
+          </div>
+
+
+          <div>
+
+            <strong>
+              Garantía de 7 días
+            </strong>
+
+            <br>
+
+            <span>
+
+              Conoce el método y, si dentro
+              del período de garantía sientes
+              que no es para ti, puedes solicitar
+              tu reembolso.
+
+            </span>
+
+          </div>
+
 
         </div>
 
 
       </div>
 
+
     </div>
+
 
   </section>
 
 
 
-  <!-- =====================================================
-       RODAPÉ
-       ===================================================== -->
+  <!-- =========================
+       FOOTER
+       ========================= -->
 
   <footer>
 
-    © 2026 Método Piel Suave™
+    © 2026 Método Piel Suave™ · Todos los derechos reservados.
 
     <br><br>
 
     <a href="/terminos-de-uso.html">
-
       Términos de uso
-
     </a>
 
-
     <a href="/politica-de-privacidad.html">
-
       Política de privacidad
-
     </a>
 
   </footer>
 
 
 
-  <!-- =====================================================
-       JAVASCRIPT — DELAY DO CTA
-       ===================================================== -->
+  <!-- ==================================================
+       JAVASCRIPT DO CTA
+       
+       8 MINUTOS = 480 SEGUNDOS
+       ================================================== -->
 
   <script>
 
-    /*
-    =========================================================
-    DELAY DO CTA
-
-    3000 = 3 segundos
-    5000 = 5 segundos
-    10000 = 10 segundos
-
-    O CTA aparece:
-
-    VSL termina
-          ↓
-    espera 3 segundos
-          ↓
-    CTA aparece
-    =========================================================
-    */
+    (function(){
 
 
-    const CTA_DELAY_MS = 450000;
+      /*
+        ================================================
+        CONFIGURAÇÃO PRINCIPAL
+        ================================================
+
+        8 minutos × 60 segundos = 480 segundos.
+
+        Portanto:
+
+        00:00 → CTA escondido
+        07:59 → CTA escondido
+        08:00 → CTA aparece
+
+        NÃO esperamos a VSL terminar.
+      */
+
+      const CTA_TIME_SECONDS = 480;
 
 
-    const ctaSection =
-      document.getElementById(
-        'ctaSection'
-      );
+      /*
+        Pegamos o player Wistia
+      */
+
+      const player =
+        document.getElementById("meuVideo");
 
 
-    const wistiaPlayer =
-      document.querySelector(
-        'wistia-player'
-      );
+      /*
+        Pegamos o CTA
+      */
+
+      const ctaSection =
+        document.getElementById("ctaSection");
 
 
-    let ctaShown = false;
+      /*
+        Pegamos a mensagem
+      */
+
+      const lockedMessage =
+        document.getElementById("lockedMessage");
+
+
+      /*
+        Impede o CTA de aparecer duas vezes
+      */
+
+      let ctaShown = false;
 
 
 
-    function revealCTA(){
+      /*
+        ================================================
+        FUNÇÃO QUE MOSTRA O CTA
+        ================================================
+      */
 
-      if(ctaShown){
+      function showCTA(){
 
-        return;
+
+        /*
+          Se já apareceu,
+          não fazemos nada.
+        */
+
+        if(ctaShown){
+
+          return;
+
+        }
+
+
+        ctaShown = true;
+
+
+        /*
+          Mostra o bloco
+        */
+
+        ctaSection.classList.add("show");
+
+
+        /*
+          Remove a mensagem
+        */
+
+        if(lockedMessage){
+
+          lockedMessage.style.display = "none";
+
+        }
+
+
+        /*
+          Pequeno atraso apenas para
+          deixar a animação visual bonita.
+        */
+
+        setTimeout(function(){
+
+
+          ctaSection.scrollIntoView({
+
+            behavior:"smooth",
+
+            block:"center"
+
+          });
+
+
+        },300);
+
 
       }
 
 
-      ctaShown = true;
-
-
-      setTimeout(
-
-        function(){
-
-          ctaSection.classList.add(
-            'show'
-          );
-
-
-          /*
-            Leva o visitante suavemente
-            até o CTA.
-          */
-
-          setTimeout(
-
-            function(){
-
-              ctaSection.scrollIntoView({
-
-                behavior:
-                  'smooth',
-
-                block:
-                  'center'
-
-              });
-
-            },
-
-            150
-
-          );
-
-        },
-
-        CTA_DELAY_MS
-
-      );
-
-    }
-
-
-
-    /*
-    =========================================================
-    DETECTA O FINAL DA VSL
-    =========================================================
-    */
-
-    if(wistiaPlayer){
-
-      wistiaPlayer.addEventListener(
-
-        'ended',
-
-        revealCTA
-
-      );
-
 
       /*
-        FALLBACK
+        ================================================
+        MÉTODO PRINCIPAL — WISTIA
+        ================================================
 
-        Caso o evento "ended" do Wistia
-        não seja disparado, libera o CTA
-        quando o vídeo chegar a aproximadamente
-        98,5% da duração.
+        O Aurora Player fornece o evento
+        "second-change".
+
+        Quando chegar em 480 segundos,
+        mostramos o CTA.
       */
 
-      wistiaPlayer.addEventListener(
+      if(player){
 
-        'timeupdate',
 
-        function(){
+        player.addEventListener(
 
-          try{
+          "second-change",
+
+          function(event){
+
+
+            const second =
+              event.detail &&
+              event.detail.second;
+
 
             if(
 
-              typeof wistiaPlayer.duration
-              === 'number'
+              typeof second === "number"
 
               &&
 
-              wistiaPlayer.duration > 0
-
-              &&
-
-              (
-                wistiaPlayer.currentTime /
-                wistiaPlayer.duration
-              ) >= 0.985
+              second >= CTA_TIME_SECONDS
 
             ){
 
-              revealCTA();
+              showCTA();
 
             }
 
-          }
-
-          catch(error){
-
-            console.log(
-              'Wistia:',
-              error
-            );
 
           }
 
-        }
+        );
 
-      );
 
-    }
+
+        /*
+          ==============================================
+          FALLBACK
+          ==============================================
+
+          Caso algum navegador não entregue
+          o evento "second-change", verificamos
+          o currentTime do player a cada 1 segundo.
+        */
+
+        const fallbackCheck =
+          setInterval(function(){
+
+
+            /*
+              Se já apareceu,
+              paramos o intervalo.
+            */
+
+            if(ctaShown){
+
+              clearInterval(
+                fallbackCheck
+              );
+
+              return;
+
+            }
+
+
+            /*
+              Tempo atual do vídeo
+            */
+
+            const currentTime =
+              Number(player.currentTime);
+
+
+            /*
+              Chegou em 8 minutos?
+            */
+
+            if(
+
+              Number.isFinite(currentTime)
+
+              &&
+
+              currentTime >= CTA_TIME_SECONDS
+
+            ){
+
+              showCTA();
+
+
+              clearInterval(
+                fallbackCheck
+              );
+
+            }
+
+
+          },1000);
+
+
+      }
+
+
+    })();
 
   </script>
 
 
 </body>
-
 </html>
